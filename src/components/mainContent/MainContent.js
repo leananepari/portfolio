@@ -3,12 +3,14 @@ import Home from './Home';
 import About from './About';
 import Portfolio from './Portfolio';
 import Contact from './Contact';
+import Header from '../header/Header';
 
 
-const Index = () => {
+const MainContent = () => {
   return (
     <div className='mainContent'>
       <Home />
+      <Header />
       <About />
       <Portfolio />
       <Contact />
@@ -16,4 +18,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default MainContent;
