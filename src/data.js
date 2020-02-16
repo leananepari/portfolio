@@ -56,3 +56,9 @@ export const projects = [
     "pageLink": ""
   }
 ]
+
+export const tabs = [
+  {"title": "HOME"},
+  {"title": "PROJECTS"},
+  {"title": "ABOUT"}
+]

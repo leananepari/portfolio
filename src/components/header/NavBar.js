@@ -1,25 +1,19 @@
 import React from 'react';
-import { NavHashLink as NavLink } from 'react-router-hash-link';
+import { HashLink as NavLink } from 'react-router-hash-link';
 import { BrowserRouter } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAt } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons';
+import TabList from './TabList';
 
 
-
-const Navbar = () => {
+const Navbar = ( { tabs, selectedTab, setSelectedTab }) => {
+  
   return (
     <div className="navbar">
       <BrowserRouter>
         <div className="links">
-          <ul>
-            <NavLink className="linkReg" smooth to="/#home" activeClassName="activeRoute">
-              HOME</NavLink>
-            <NavLink className="linkReg" smooth to="/#about" activeClassName="activeRoute">
-              PROJECTS</NavLink>
-            <NavLink className="linkReg" smooth to="/#portfolio" activeClassName="activeRoute">
-              ABOUT</NavLink>
-          </ul>
+          <TabList tabs={tabs} selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
         </div>
         <div className="icons">
           <div className="icon"><FontAwesomeIcon style={{width: '18px', cursor: 'pointer', color: 'white'}} icon={faAt} size='lg'/></div>

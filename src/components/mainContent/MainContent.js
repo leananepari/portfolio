@@ -1,17 +1,16 @@
-import React from 'react';
-import Home from './Home';
-import ProjectList from './ProjectList';
+import React, { useState } from 'react';
 import Header from '../header/Header';
-import About from './About';
+import { tabs } from '../../data';
+import Display from './Display';
 
 
 const MainContent = () => {
+  const [selectedTab, setSelectedTab] = useState("HOME");
+
   return (
     <div className='mainContent'>
-      <Header />
-      <Home />
-      <ProjectList />
-      <About />
+      <Header tabs={tabs} selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
+      <Display selectedTab={selectedTab} setSelectedTab={setSelectedTab}/>
     </div>
   );
 };
