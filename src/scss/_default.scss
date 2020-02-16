@@ -6,10 +6,43 @@
 
 body{
   margin: 0;
+  font-family: BlinkMacSystemFont, Helvetica Neue,sans-serif;
 }
 
 html,body {
   overflow-x: hidden; 
+}
+
+/*==========================================================
+  NAVIGATION
+==========================================================*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  background-color: #2097D1;
+
+  .links {
+    margin-left: 40px;
+
+    .linkReg {
+      text-decoration: none;
+      color: black;
+      margin-right: 20px;
+      color: white;
+      font-weight: 230;
+      font-size: 15px;
+    }
+  }
+  .icons {
+    display: flex;
+    margin-right: 40px;
+
+    .icon {
+      margin-left: 20px;
+    }
+  }
 }
 
 /*==========================================================
@@ -20,38 +53,134 @@ html,body {
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   height: 700px;
+   height: 450px;
    margin: 0;
-   background-color: lightblue;
+   background-color: #2097D1;
    text-align: center;
+   color: white;
+
+   h1 {
+     font-size: 28px;
+     font-weight: 300;
+     margin-bottom: 15px;
+   }
+   h2 {
+     font-size: 18px;
+     font-weight: 150;
+     letter-spacing: 1px;
+   }
+   
+ }
+
+ .home-projects-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2097D1;
+
+    .linkReg {
+      text-decoration: none;
+      color: white;
+      margin-bottom: 5px;
+      letter-spacing: 1px;
+    }
+    .icon {
+      margin-bottom: 35px;
+    }
+ }
+
+ /*==========================================================
+  PROJECTS
+ =========================================================*/
+ #projects {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+ }
+
+ .project-card {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 25%;
+   height: 260px;
+   border: 0.02px solid lightgrey;
+   box-sizing: border-box;
+   cursor: pointer;
+ }
+
+ .projects-about-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+
+  .linkReg {
+    text-decoration: none;
+    color: #2097D1;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    letter-spacing: 1px;
+  }
+  .icon {
+    margin-bottom: 35px;
+  }
  }
 
  /*==========================================================
   ABOUT
  =========================================================*/
  #about {
-   display: flex;
-   justify-content: center;
-   height: 700px;
-   background-color: yellow;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+
+  .left-content {
+    margin-left: 40px;
+    margin-right: 10px;
+    width: 50%;
+
+    .image-wrap {
+      width: 150px;
+    }
+    .image {
+      width: 100%;
+      border-radius: 50%;
+      float: left;
+      margin-right: 10px;
+    }
+    p {
+      margin-top: 10px;
+      color: #222222;
+    }
+  }
+
+  .right-content {
+    margin-right: 40px;
+    margin-left: 10px;
+    width: 50%;
+  
+      h2 {
+        margin-bottom: 10px;
+        color: #222222;
+        font-size: 18px;
+        font-weight: 600;
+      }
+      .list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        color: #2097D1;
+        font-weight: 500;
+      }
+
+      .item {
+        margin-right: 10px;
+      }
+  }
  }
 
- /*==========================================================
-  PORTFOLIO
- =========================================================*/
- #portfolio {
-   display: flex;
-   justify-content: center;
-   height: 700px;
-   background-color: orange;
- }
-
- /*==========================================================
-  CONTACT
- =========================================================*/
- #contact {
-   display: flex;
-   justify-content: center;
-   height: 400px;
-   background-color: gray;
- }
+  
