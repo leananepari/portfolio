@@ -5,7 +5,7 @@ import { faAt } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons';
 
 const About = () => {
-  
+
   return (
     <div id='about'>
       <div className="left-content">

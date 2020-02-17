@@ -17,7 +17,11 @@ html, body {
   justify-content: space-between;
   align-items: center;
   height: 70px;
-  background-color: #2097D1; }
+  background-color: #2097D1;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  width: 100%; }
   .navbar .links {
     margin-left: 40px; }
     .navbar .links .linkReg {
@@ -26,7 +30,8 @@ html, body {
       margin-right: 20px;
       color: white;
       font-weight: 230;
-      font-size: 15px; }
+      font-size: 15px;
+      padding-bottom: 5px; }
   .navbar .icons {
     display: flex;
     margin-right: 40px; }
@@ -41,7 +46,7 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 450px;
+  height: 100vh;
   margin: 0;
   background-color: #2097D1;
   text-align: center;
@@ -60,14 +65,16 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #2097D1; }
+  background-color: #2097D1;
+  margin-top: 60px; }
   .home-projects-button .linkReg {
     text-decoration: none;
     color: white;
-    margin-bottom: 5px;
-    letter-spacing: 1px; }
-  .home-projects-button .icon {
-    margin-bottom: 35px; }
+    letter-spacing: 1px;
+    background: rgba(34, 34, 34, 0.4);
+    padding: 15px 30px 15px 30px;
+    border-radius: 2px;
+    cursor: pointer; }
 
 /*==========================================================
   PROJECTS
@@ -75,32 +82,18 @@ html, body {
 #projects {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  padding-top: 70px; }
 
 .project-card {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 25%;
-  height: 260px;
+  height: calc(50vh - 35px);
   border: 0.02px solid lightgrey;
   box-sizing: border-box;
   cursor: pointer; }
-
-.projects-about-button {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: white; }
-  .projects-about-button .linkReg {
-    text-decoration: none;
-    color: #2097D1;
-    margin-bottom: 5px;
-    margin-top: 15px;
-    letter-spacing: 1px; }
-  .projects-about-button .icon {
-    margin-bottom: 35px; }
 
 /*==========================================================
   ABOUT
@@ -109,7 +102,8 @@ html, body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 80px; }
+  margin-bottom: 80px;
+  margin-top: 100px; }
   #about .left-content {
     margin-left: 40px;
     margin-right: 10px;
