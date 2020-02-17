@@ -1,15 +1,26 @@
-import React, {Component} from 'react';
+import React from 'react';
 import '../css/styles.css';
-import MainContent from './mainContent/MainContent';
+import { Route, Switch } from "react-router-dom";
+import Home from '../components/mainContent/Home';
+import Projects from '../components/mainContent/ProjectList';
+import About from '../components/mainContent/About';
+import NavBar from '../components/header/NavBar';
 
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <MainContent />
-      </div>
-    );
-  }
+const App = () => {
+
+  return (
+    <div>
+      <NavBar/>
+
+      <Switch>
+        <Route exact path='/' component={Home} />
+        <Route exact path='/projects' component={Projects} />
+        <Route  path='/about' component={About} />
+      </Switch>
+
+    </div>
+  );
+  
 }
 
 export default App;

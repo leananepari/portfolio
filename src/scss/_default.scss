@@ -38,20 +38,6 @@ html,body {
       font-weight: 230;
       font-size: 15px;
       padding-bottom: 5px;
-
-      .activeRoute {
-        background-color: yellow;
-        border-bottom: 0.4rem solid red;
-        cursor: not-allowed;
-      }
-      .activeRoute {
-        border-bottom: 1px solid red;
-        color: red;
-      }
-    }
-
-    .activeRoute {
-      border-bottom: 1px solid red;
     }
   }
   .icons {
@@ -72,7 +58,7 @@ html,body {
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   height: 80vh;
+   height: 100vh;
    margin: 0;
    background-color: #2097D1;
    text-align: center;
@@ -97,16 +83,16 @@ html,body {
     justify-content: center;
     align-items: center;
     background-color: #2097D1;
-    height: 20vh;
+    margin-top: 60px;
 
     .linkReg {
       text-decoration: none;
       color: white;
-      margin-bottom: 5px;
       letter-spacing: 1px;
       background: rgba(34, 34, 34, 0.4); 
       padding: 15px 30px 15px 30px;
       border-radius: 2px;
+      cursor: pointer;
     }
  }
 

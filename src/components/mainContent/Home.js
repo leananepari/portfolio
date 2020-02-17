@@ -1,28 +1,23 @@
 import React from 'react';
-import { NavHashLink as NavLink } from 'react-router-hash-link';
-import { BrowserRouter } from "react-router-dom";
+import { withRouter } from "react-router";
 
 
-const Home = ( { setSelectedTab } ) => {
+const Home = (props) => {
 
   const handleClick = () => {
-    setSelectedTab("PROJECTS")
+    props.history.push("/projects")
   }
 
   return (
-    <BrowserRouter>
-      <div id='home'>
-        <div>
-        <h1>Full-stack Developer</h1>
-        <h2>hi. I am Leana. I love to build beautiful, interactive applications.</h2>
-        </div>
-      </div>
+    <div id='home'>
+      <h1>Full-stack Developer</h1>
+      <h2>hi. I am Leana. I love to build beautiful, interactive applications.</h2>
       <div className="home-projects-button">
-          <NavLink onClick={handleClick} className="linkReg" to="/projects" activeClassName="activeRoute">
-                projects</NavLink>
+        <div className="linkReg" to="/projects" activeClassName="activeRoute" onClick={handleClick}>
+              projects</div>
       </div>
-    </BrowserRouter>
+    </div>
   );
 };
 
-export default Home;
+export default withRouter(Home);

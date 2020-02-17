@@ -1,26 +1,34 @@
 import React from 'react';
-import { HashLink as NavLink } from 'react-router-hash-link';
-import { BrowserRouter } from "react-router-dom";
+import { NavLink as Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAt } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons';
-import TabList from './TabList';
 
 
-const Navbar = ( { tabs, selectedTab, setSelectedTab }) => {
-  
+const Navbar = () => {
+
   return (
     <div className="navbar">
-      <BrowserRouter>
-        <div className="links">
-          <TabList tabs={tabs} selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
-        </div>
-        <div className="icons">
-          <div className="icon"><FontAwesomeIcon style={{width: '18px', cursor: 'pointer', color: 'white'}} icon={faAt} size='lg'/></div>
-          <div className="icon"><FontAwesomeIcon style={{width: '18px', cursor: 'pointer', color: 'white'}} icon={faLinkedin} size='lg'/></div>
-          <div className="icon"><FontAwesomeIcon style={{width: '18px', cursor: 'pointer', color: 'white'}} icon={faGithub} size='lg'/></div>
-        </div>
-      </BrowserRouter>
+      <div className="links">
+        <Link exact to="/" className="linkReg" activeStyle={{ borderBottom: '1px solid white' }}>HOME</Link>
+        <Link to="/projects" className="linkReg" activeStyle={{ borderBottom: '1px solid white' }}>PROJECTS</Link>
+        <Link to="/about" className="linkReg" activeStyle={{ borderBottom: '1px solid white' }}>ABOUT</Link>
+      </div>
+      <div className="icons">
+      
+        <Link to="" className="icon">
+          <FontAwesomeIcon style={{width: '18px', cursor: 'pointer', color: 'white'}} icon={faAt} size='lg'/> 
+        </Link>
+
+        <Link to="" target="_blank" onClick={(event) => {event.preventDefault(); window.open("https://www.linkedin.com/in/leana-neparidze");}} className="icon"> 
+          <FontAwesomeIcon style={{width: '18px', cursor: 'pointer', color: 'white'}} icon={faLinkedin} size='lg'/> 
+        </Link>
+
+        <Link to="" target="_blank" onClick={(event) => {event.preventDefault(); window.open("https://github.com/leananepari");}} className="icon"> 
+          <FontAwesomeIcon style={{width: '18px', cursor: 'pointer', color: 'white'}} icon={faGithub} size='lg'/> 
+        </Link>
+
+      </div>
     </div>
   );
 };
