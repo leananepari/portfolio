@@ -5,6 +5,7 @@ import Home from '../components/mainContent/Home';
 import Projects from '../components/mainContent/ProjectList';
 import About from '../components/mainContent/About';
 import NavBar from '../components/header/NavBar';
+import Form from '../components/mainContent/Form';
 
 const App = () => {
 
@@ -16,6 +17,7 @@ const App = () => {
         <Route exact path='/' component={Home} />
         <Route exact path='/projects' component={Projects} />
         <Route  path='/about' component={About} />
+        <Route  path='/emailme' component={Form} />
       </Switch>
 
     </div>

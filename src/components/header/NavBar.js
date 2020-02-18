@@ -15,17 +15,17 @@ const Navbar = () => {
         <Link to="/about" className="linkReg" activeStyle={{ borderBottom: '1px solid white' }}>ABOUT</Link>
       </div>
       <div className="icons">
-      
-        <Link to="" className="icon">
-          <FontAwesomeIcon style={{width: '18px', cursor: 'pointer', color: 'white'}} icon={faAt} size='lg'/> 
+
+        <Link to="/emailme" className="icon">
+          <FontAwesomeIcon style={{width: '18px', cursor: 'pointer', color: 'white', borderBottom: '1px solid transparent' }} icon={faAt} size='lg'/> 
         </Link>
 
         <Link to="" target="_blank" onClick={(event) => {event.preventDefault(); window.open("https://www.linkedin.com/in/leana-neparidze");}} className="icon"> 
-          <FontAwesomeIcon style={{width: '18px', cursor: 'pointer', color: 'white'}} icon={faLinkedin} size='lg'/> 
+          <FontAwesomeIcon style={{width: '18px', cursor: 'pointer', color: 'white', borderBottom: '1px solid transparent' }} icon={faLinkedin} size='lg'/> 
         </Link>
 
         <Link to="" target="_blank" onClick={(event) => {event.preventDefault(); window.open("https://github.com/leananepari");}} className="icon"> 
-          <FontAwesomeIcon style={{width: '18px', cursor: 'pointer', color: 'white'}} icon={faGithub} size='lg'/> 
+          <FontAwesomeIcon style={{width: '18px', cursor: 'pointer', color: 'white', borderBottom: '1px solid transparent' }} icon={faGithub} size='lg'/> 
         </Link>
 
       </div>

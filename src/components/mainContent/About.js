@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink as Link } from 'react-router-dom';
 import portrait from '../../assets/portrait.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAt } from '@fortawesome/free-solid-svg-icons';
@@ -31,9 +32,19 @@ const About = () => {
         <div className="contact">
           <h2>contact</h2>
           <div className="list">
-            <div className="item"><FontAwesomeIcon style={{width: '18px', cursor: 'pointer', color: '#2097D1'}} icon={faAt} size='lg'/></div>
-            <div className="item"><FontAwesomeIcon style={{width: '18px', cursor: 'pointer', color: '#2097D1'}} icon={faLinkedin} size='lg'/></div>
-            <div className="item"><FontAwesomeIcon style={{width: '18px', cursor: 'pointer', color: '#2097D1'}} icon={faGithub} size='lg'/></div>
+
+            <Link to="" className="item">
+              <FontAwesomeIcon style={{width: '18px', cursor: 'pointer', color: '#2097D1'}} icon={faAt} size='lg'/> 
+            </Link>
+
+            <Link to="" target="_blank" onClick={(event) => {event.preventDefault(); window.open("https://www.linkedin.com/in/leana-neparidze");}} className="item"> 
+              <FontAwesomeIcon style={{width: '18px', cursor: 'pointer', color: '#2097D1'}} icon={faLinkedin} size='lg'/> 
+            </Link>
+
+            <Link to="" target="_blank" onClick={(event) => {event.preventDefault(); window.open("https://github.com/leananepari");}} className="item"> 
+              <FontAwesomeIcon style={{width: '18px', cursor: 'pointer', color: '#2097D1'}} icon={faGithub} size='lg'/> 
+            </Link>
+
           </div>
         </div>
       </div>
