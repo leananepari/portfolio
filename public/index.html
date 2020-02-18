@@ -34,11 +34,12 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+ 
   <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
   <script type="text/javascript">
     (function(){
-        emailjs.init('user_y9IAm31BAo7xg4hAvxu7G'); // Obtain your user ID at the dashboard https://dashboard.emailjs.com/integration
+        emailjs.init("%REACT_APP_USER_ID%"); // Obtain your user ID at the dashboard https://dashboard.emailjs.com/integration
     })();
   </script>
 </html>

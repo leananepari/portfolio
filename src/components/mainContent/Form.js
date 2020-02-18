@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-const template_id = process.env.REACT_APP_TEMPLATE_ID;
+import axios from 'axios';
+const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
+const USER_ID = process.env.REACT_APP_USER_ID;
 
 const Form = () => {
   const [state, setState] = useState({"message": "", "name": "", "email": ""});
@@ -18,9 +20,10 @@ const Form = () => {
     setState({...state, [event.target.name]: event.target.value })
   }
 
-  const handleSubmit = (event) => {
+  const handleSubmit = () => {
     if (state.message !== "" && state.name !== "" && state.email !== "") {
-      const templateId = template_id;
+
+      const templateId = TEMPLATE_ID;
 
       sendFeedback(templateId, {message_html: state.message, from_name: state.name, reply_to: state.email, to_name: "Leana"})
       setState({"message": "", "name": "", "email": ""})
