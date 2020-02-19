@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
-import axios from 'axios';
 const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
-const USER_ID = process.env.REACT_APP_USER_ID;
 
 const Form = () => {
   const [state, setState] = useState({"message": "", "name": "", "email": ""});
@@ -52,7 +50,7 @@ const Form = () => {
   }
   
   return (
-  	<form className="form" style={{marginTop: '140px'}}>
+  	<form className="form">
     	<h1>Contact me</h1>
       <div style={{display: 'flex', width: '100%'}}>
         <input 

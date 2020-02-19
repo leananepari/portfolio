@@ -96,6 +96,13 @@ html, body {
   border: 0.02px solid lightgrey;
   box-sizing: border-box;
   cursor: pointer; }
+  .project-card h1 {
+    font-size: 24px;
+    font-weight: 300; }
+  .project-card .speak_out {
+    color: #C73642; }
+    .project-card .speak_out h1 {
+      color: #C73642; }
 
 /*==========================================================
   ABOUT
@@ -105,7 +112,7 @@ html, body {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 80px;
-  margin-top: 100px; }
+  margin-top: 140px; }
   #about .left-content {
     margin-left: 40px;
     margin-right: 10px;
@@ -147,7 +154,8 @@ html, body {
   flex-direction: column;
   width: 50%;
   margin: 0 auto;
-  font-size: 18px; }
+  font-size: 18px;
+  margin-top: 140px; }
   .form h1 {
     color: #222222;
     margin-bottom: 10px;

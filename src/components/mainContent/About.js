@@ -33,8 +33,8 @@ const About = () => {
           <h2>contact</h2>
           <div className="list">
 
-            <Link to="" className="item">
-              <FontAwesomeIcon style={{width: '18px', cursor: 'pointer', color: '#2097D1'}} icon={faAt} size='lg'/> 
+            <Link to="/emailme" className="item">
+              <FontAwesomeIcon style={{width: '18px', cursor: 'pointer', color: '#2097D1', borderBottom: '1px solid transparent' }} icon={faAt} size='lg'/> 
             </Link>
 
             <Link to="" target="_blank" onClick={(event) => {event.preventDefault(); window.open("https://www.linkedin.com/in/leana-neparidze");}} className="item"> 
