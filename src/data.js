@@ -26,39 +26,5 @@ export const projects = [
     "description": "",
     "githubLink": "",
     "pageLink": ""
-  },
-  {
-    "name": "Project 5",
-    "technologies": [],
-    "description": "",
-    "githubLink": "",
-    "pageLink": ""
-  },
-  {
-    "name": "Project 6",
-    "technologies": [],
-    "description": "",
-    "githubLink": "",
-    "pageLink": ""
-  },
-  {
-    "name": "Project 7",
-    "technologies": [],
-    "description": "",
-    "githubLink": "",
-    "pageLink": ""
-  },
-  {
-    "name": "Project 8",
-    "technologies": [],
-    "description": "",
-    "githubLink": "",
-    "pageLink": ""
   }
-]
-
-export const tabs = [
-  {"title": "HOME"},
-  {"title": "PROJECTS"},
-  {"title": "ABOUT"}
 ]
