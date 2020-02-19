@@ -86,23 +86,64 @@ html, body {
   justify-content: center;
   flex-wrap: wrap;
   padding-top: 70px; }
-
-.project-card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  height: calc(50vh - 35px);
-  border: 0.02px solid lightgrey;
-  box-sizing: border-box;
-  cursor: pointer; }
-  .project-card h1 {
-    font-size: 24px;
-    font-weight: 300; }
-  .project-card .speak_out {
-    color: #C73642; }
-    .project-card .speak_out h1 {
-      color: #C73642; }
+  #projects .project-card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: calc(50vh - 35px);
+    border: 0.02px solid lightgrey;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: transform .2s;
+    /* Animation */ }
+    #projects .project-card .logo {
+      display: flex;
+      align-items: center;
+      height: 80%; }
+    #projects .project-card .technologies {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      align-self: flex-end;
+      height: 20%; }
+      #projects .project-card .technologies .item {
+        color: white;
+        font-weight: 200;
+        margin-right: 10px; }
+    #projects .project-card .description {
+      width: 80%;
+      height: 80%;
+      display: flex;
+      flex-direction: column; }
+      #projects .project-card .description .title-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        #projects .project-card .description .title-wrap h1 {
+          font-weight: 700;
+          color: #222222;
+          font-size: 22px;
+          opacity: 0.8; }
+      #projects .project-card .description .about-project {
+        margin-top: 20px; }
+        #projects .project-card .description .about-project h2 {
+          font-size: 16px;
+          font-weight: 600;
+          letter-spacing: 1px;
+          color: #222222;
+          opacity: 0.8; }
+        #projects .project-card .description .about-project p {
+          margin-top: 10px;
+          font-weight: 200;
+          letter-spacing: 1px;
+          line-height: 20px; }
+        #projects .project-card .description .about-project .project-links {
+          margin-top: 10px; }
+  #projects .project-card:hover {
+    transform: scale(1.004); }
 
 /*==========================================================
   ABOUT
