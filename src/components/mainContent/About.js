@@ -11,7 +11,7 @@ const About = () => {
     <div id='about'>
       <div className="left-content">
         <div className="image-wrap"><img src={portrait} className="image" alt="portrait"/></div>
-        <p>I am a Full-stack Developer based in Bay area. </p>
+        <p>I am a Full-stack Developer based in Bay area. I enjoy developing functional applications and can easily adapt to a new technology.</p>
       </div>
       <div className="right-content">
         <div className="skills">
@@ -24,7 +24,7 @@ const About = () => {
             <div className="item">Express</div>
             <div className="item">Python</div>
             <div className="item">Django</div>
-            <div className="item">SQL</div>
+            <div className="item">PostgreSQL</div>
             <div className="item">Java</div>
             <div className="item">Spring</div>
           </div>

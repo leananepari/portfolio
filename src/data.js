@@ -31,7 +31,7 @@ export const projects = [
     "technologies": ["React"],
     "short_description": "Sleep tracking app that helps user determine how many hours they should sleep for best daily performance.",
     "description": "User is able to enter time they go to sleep and time they wake up with corresponding moods. This app was built during a project week at Lambda School, where I worked with a team using agile methodologies. I was leading Front-end development. (Username: ad@min.com Password: password).",
-    "githubLink": "https://github.com/buildweek-sleeptracker",
+    "githubLink": "https://github.com/leananepari/front-end",
     "pageLink": "https://sleepmood.leananeparidze.now.sh/login"
   },
   {
