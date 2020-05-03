@@ -22,7 +22,7 @@ export const projects = [
     "short_description": "Final project of Computer Science fundamentals section.",
     "description": "Independently completed the task of efficiently traversing an island maze, solving puzzles, and mining a coin. Incorporated a cooldown period into the algorithm to handle the restricted access server. Utilized the knowledge of blockchain technology to write the proof of work algorithm to mine a coin.",
     "githubLink": "https://github.com/leananepari/CS-Build-Week-2/tree/leana-neparidze",
-    "pageLink": ""
+    "pageLink": "https://treasure-hunt.now.sh/"
   },
   {
     "name": "Sleep Mood",

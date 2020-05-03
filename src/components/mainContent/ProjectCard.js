@@ -3,6 +3,7 @@ import { NavLink as Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes, faGlobe } from '@fortawesome/free-solid-svg-icons';
 import { faGithub} from '@fortawesome/free-brands-svg-icons';
+import img from './../../assets/sleepmood.png';
 
 
 const ProjectCard = ( { project }) => {
@@ -18,7 +19,7 @@ const ProjectCard = ( { project }) => {
   
   if (click === false) {
     return (
-      <div className='project-card' onClick={handleClick} style={{backgroundImage: `${project.name === "Sleep Mood" ? 'url("https://i.imgur.com/QHWwH4G.png")' : ''}`,
+      <div className='project-card' onClick={handleClick} style={{backgroundImage: `${project.name === "Sleep Mood" ? `url(${img})` : ''}`,
                                             backgroundColor: `${project.name === "Bookr" ? '#0F5814' : project.name === "Treasure Hunt" ? '#4c3a1e' : project.name === "Speak Out" ? '#12546f' : 'transparent'}`}}>
         <div className="logo">
           <div style={{height: `${project.name === "Treasure Hunt" ? "100px" : "60px"}`}}><img src={project.img} alt="logo" style={{maxWidth: '100%', maxHeight: '100%'}}/></div>
