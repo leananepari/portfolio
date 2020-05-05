@@ -80,74 +80,6 @@ html, body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
 
 /*==========================================================
-  PROJECTS
- =========================================================*/
-#projects {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding-top: 70px; }
-  #projects .project-card {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-    height: calc(50vh - 35px);
-    border: 0.02px solid lightgrey;
-    box-sizing: border-box;
-    cursor: pointer;
-    transition: transform .2s;
-    /* Animation */ }
-    #projects .project-card .logo {
-      display: flex;
-      align-items: center;
-      height: 80%; }
-    #projects .project-card .technologies {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      align-self: flex-end;
-      height: 20%; }
-      #projects .project-card .technologies .item {
-        color: white;
-        font-weight: 200;
-        margin-right: 10px; }
-    #projects .project-card .description {
-      width: 80%;
-      height: 80%;
-      display: flex;
-      flex-direction: column; }
-      #projects .project-card .description .title-wrap {
-        display: flex;
-        justify-content: space-between;
-        align-items: center; }
-        #projects .project-card .description .title-wrap h1 {
-          font-weight: 700;
-          color: #222222;
-          font-size: 22px;
-          opacity: 0.8; }
-      #projects .project-card .description .about-project {
-        margin-top: 20px; }
-        #projects .project-card .description .about-project h2 {
-          font-size: 16px;
-          font-weight: 600;
-          letter-spacing: 1px;
-          color: #222222;
-          opacity: 0.8;
-          line-height: 20px; }
-        #projects .project-card .description .about-project p {
-          margin-top: 10px;
-          font-weight: 200;
-          letter-spacing: 1px;
-          line-height: 20px; }
-        #projects .project-card .description .about-project .project-links {
-          margin-top: 10px; }
-  #projects .project-card:hover {
-    transform: scale(1.004); }
-
-/*==========================================================
   ABOUT
  =========================================================*/
 #about {
@@ -228,6 +160,36 @@ html, body {
     cursor: pointer; }
   .form .btn-submit:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
+
+/*==========================================================
+  PROJECTS
+ =========================================================*/
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .content .project-description {
+    width: 50%; }
+    .content .project-description h1 {
+      font-size: 24px;
+      font-weight: 400;
+      margin-bottom: 20px;
+      margin-right: 10px; }
+    .content .project-description div {
+      font-weight: 200;
+      margin-bottom: 10px;
+      line-height: 22px; }
+    .content .project-description .tech {
+      line-height: 19px; }
+      .content .project-description .tech h2 {
+        font-weight: 350;
+        font-size: 18px; }
+      .content .project-description .tech p {
+        margin-bottom: 5px; }
+  .content video {
+    width: 50%;
+    border: 1px solid #ada8a8;
+    border-right: 1px solid transparent; }
 
 /*
 html5doctor.com Reset Stylesheet
