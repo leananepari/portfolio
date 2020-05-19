@@ -31,7 +31,7 @@ const Form = () => {
 
       sendFeedback(templateId, {message_html: state.message, from_name: state.name, reply_to: state.email, to_name: "Leana"})
       setState({"message": "", "name": "", "email": ""})
-      
+
     } else {
       if (state.message === "") {
         setErrorBorderMessage(true);
@@ -72,8 +72,6 @@ const Form = () => {
           setMessage('');
         }, 2000);
       })
-
-
   }
   
   return (
