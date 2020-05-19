@@ -173,23 +173,26 @@ html, body {
     .content .project-description h1 {
       font-size: 24px;
       font-weight: 400;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
       margin-right: 10px; }
     .content .project-description div {
       font-weight: 200;
       margin-bottom: 10px;
       line-height: 22px; }
     .content .project-description .tech {
-      line-height: 19px; }
+      line-height: 19px;
+      margin-bottom: 25px; }
       .content .project-description .tech h2 {
         font-weight: 350;
-        font-size: 18px; }
+        font-size: 16px; }
       .content .project-description .tech p {
-        margin-bottom: 5px; }
-  .content video {
+        font-size: 15px;
+        margin-bottom: 10px; }
+  .content .video-wrap {
     width: 50%;
-    border: 1px solid #ada8a8;
-    border-right: 1px solid transparent; }
+    border: 0.9px solid #ada8a8; }
+    .content .video-wrap video {
+      width: 100%; }
 
 /*
 html5doctor.com Reset Stylesheet

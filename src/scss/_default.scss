@@ -314,7 +314,7 @@ html,body {
      h1 {
        font-size: 24px;
        font-weight: 400;
-       margin-bottom: 20px;
+       margin-bottom: 15px;
        margin-right: 10px;
      }
      div {
@@ -325,23 +325,28 @@ html,body {
 
      .tech {
        line-height: 19px;
+       margin-bottom: 25px;
 
       h2 {
         font-weight: 350;
-        font-size: 18px;
+        font-size: 16px;
       }
 
       p {
-        margin-bottom: 5px;
+        font-size: 15px;
+        margin-bottom: 10px;
       }
       
      }
    }
 
-   video {
-     width: 50%;
-     border: 1px solid #ada8a8;
-     border-right: 1px solid transparent;
-   }
+   .video-wrap {
+      width: 50%;
+      border: 0.9px solid #ada8a8;
+
+      video {
+        width: 100%;
+      }
+  }
 }
 

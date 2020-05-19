@@ -38,9 +38,11 @@ const ProjectList = () => {
           <p>Spring</p>
         </div>
       </div>
-      <video loop autoPlay muted={true} >
-        <source src={video} type="video/mp4" />
-      </video>
+      <div className="video-wrap">
+        <video loop autoPlay muted={true} >
+          <source src={video} type="video/mp4" />
+        </video>
+      </div>
     </div>
   );
 };
