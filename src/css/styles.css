@@ -132,6 +132,12 @@ html, body {
   margin: 0 auto;
   font-size: 18px;
   margin-top: 140px; }
+  .form .success-or-failure-message {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px; }
+    .form .success-or-failure-message p {
+      font-size: 14px; }
   .form h1 {
     color: #222222;
     margin-bottom: 10px;

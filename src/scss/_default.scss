@@ -264,6 +264,16 @@ html,body {
    font-size: 18px;
    margin-top: 140px;
 
+   .success-or-failure-message {
+     display: flex;
+     align-items: center;
+     margin-bottom: 15px;
+
+     p {
+       font-size: 14px;
+     }
+   }
+
    h1 {
      color: #222222;
      margin-bottom: 10px;
