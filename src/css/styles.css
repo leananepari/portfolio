@@ -179,7 +179,7 @@ html, body {
     .content .project-description h1 {
       font-size: 24px;
       font-weight: 400;
-      margin-bottom: 15px;
+      margin-bottom: 5px;
       margin-right: 10px; }
     .content .project-description div {
       font-weight: 200;
@@ -196,7 +196,8 @@ html, body {
         margin-bottom: 10px; }
   .content .video-wrap {
     width: 50%;
-    border: 0.9px solid #ada8a8; }
+    border: 0.9px solid #ada8a8;
+    margin-bottom: 40px; }
     .content .video-wrap video {
       width: 100%; }
 

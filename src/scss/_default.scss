@@ -324,7 +324,7 @@ html,body {
      h1 {
        font-size: 24px;
        font-weight: 400;
-       margin-bottom: 15px;
+       margin-bottom: 5px;
        margin-right: 10px;
      }
      div {
@@ -353,6 +353,7 @@ html,body {
    .video-wrap {
       width: 50%;
       border: 0.9px solid #ada8a8;
+      margin-bottom: 40px;
 
       video {
         width: 100%;
