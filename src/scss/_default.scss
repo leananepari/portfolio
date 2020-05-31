@@ -201,18 +201,19 @@ html,body {
  =========================================================*/
  #about {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 80px;
   margin-top: 140px;
 
-  .left-content {
-    margin-left: 40px;
-    margin-right: 10px;
+  .top-content {
+    margin-bottom: 40px;
+    
     width: 50%;
 
     .image-wrap {
-      width: 150px;
+      width: 180px;
     }
     .image {
       width: 100%;
@@ -224,12 +225,12 @@ html,body {
       margin-top: 10px;
       color: #222222;
       line-height: 20px;
+      font-size: 14px;
+      font-weight: 300;
     }
   }
 
-  .right-content {
-    margin-right: 40px;
-    margin-left: 10px;
+  .bottom-content {
     width: 50%;
   
       h2 {
@@ -244,10 +245,12 @@ html,body {
         margin-bottom: 20px;
         color: #2097D1;
         font-weight: 500;
+        font-size: 14px
       }
 
       .item {
         margin-right: 10px;
+        margin-bottom: 5px;
       }
   }
  }

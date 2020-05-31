@@ -9,11 +9,18 @@ const About = () => {
 
   return (
     <div id='about'>
-      <div className="left-content">
+      <div className="top-content">
         <div className="image-wrap"><img src={portrait} className="image" alt="portrait"/></div>
-        <p>I am a Full-stack Developer based in Bay area. I enjoy developing functional applications and can easily adapt to a new technology.</p>
+        <p>I am a full-stack web developer based in Bay area. I value technical challenges and enjoy building beautiful applications.</p>
+
+        <p>Although formally educated in Journalism and then English,
+        I’ve been involved in software development for a couple of years. As a self-taught programmer, I identify my strengths as being passionate about what I do, constantly improving, and empathizing with others. </p>
+
+        <p>Currently, I work as a Team Lead at a coding bootcamp called Lambda School. I lead a group of students through a Computer Science curriculum, while guiding, mentoring, and supporting them with their learning journeys.</p>
+
+        <p>In my free time, I enjoy outdoor activities: hiking, biking, or picnicking at the local park.</p>
       </div>
-      <div className="right-content">
+      <div className="bottom-content">
         <div className="skills">
           <h2>skills</h2>
           <div className="list">
@@ -34,15 +41,15 @@ const About = () => {
           <div className="list">
 
             <Link to="/emailme" className="item">
-              <FontAwesomeIcon style={{width: '18px', cursor: 'pointer', color: '#2097D1', borderBottom: '1px solid transparent' }} icon={faAt} size='lg'/> 
+              <FontAwesomeIcon style={{width: '16px', cursor: 'pointer', color: '#2097D1', borderBottom: '1px solid transparent' }} icon={faAt} size='lg'/> 
             </Link>
 
             <Link to="" target="_blank" onClick={(event) => {event.preventDefault(); window.open("https://www.linkedin.com/in/leana-neparidze");}} className="item"> 
-              <FontAwesomeIcon style={{width: '18px', cursor: 'pointer', color: '#2097D1'}} icon={faLinkedin} size='lg'/> 
+              <FontAwesomeIcon style={{width: '16px', cursor: 'pointer', color: '#2097D1'}} icon={faLinkedin} size='lg'/> 
             </Link>
 
             <Link to="" target="_blank" onClick={(event) => {event.preventDefault(); window.open("https://github.com/leananepari");}} className="item"> 
-              <FontAwesomeIcon style={{width: '18px', cursor: 'pointer', color: '#2097D1'}} icon={faGithub} size='lg'/> 
+              <FontAwesomeIcon style={{width: '16px', cursor: 'pointer', color: '#2097D1'}} icon={faGithub} size='lg'/> 
             </Link>
 
           </div>
