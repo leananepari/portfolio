@@ -64,7 +64,7 @@ const Navbar = () => {
           </div>
         : 
         width > 500 ?
-          <div>
+          <div ref={node}>
             <Link exact to="/" className="linkReg" activeStyle={{ borderBottom: '1px solid white' }}>HOME</Link>
             <Link to="/projects" className="linkReg" activeStyle={{ borderBottom: '1px solid white' }}>PROJECTS</Link>
             <Link to="/about" className="linkReg" activeStyle={{ borderBottom: '1px solid white' }}>ABOUT</Link>

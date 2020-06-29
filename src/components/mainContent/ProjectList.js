@@ -4,6 +4,7 @@ import { projects } from '../../data';
 import ProjectCard from './ProjectCard';
 import video_To_Do from '../../assets/to-do-video.mp4';
 import video_Game_of_Life from '../../assets/game-of-life.mp4';
+import video_speak_out from '../../assets/speak-out-vid-new.mp4';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faGlobe } from '@fortawesome/free-solid-svg-icons';
@@ -71,6 +72,40 @@ const ProjectList = () => {
           <source src={video_Game_of_Life} type="video/mp4" />
         </video>
       </div>
+
+      <div className="project-description">
+        <div style={{display: 'flex'}}>
+          <h1>Speak Out, An English Language School</h1>
+          <Link to="" target="_blank" onClick={(event) => {event.preventDefault(); window.open('https://github.com/Lambda-School-Labs/speak-out-fe');}} className="icon"> 
+            <FontAwesomeIcon style={{width: '20px', cursor: 'pointer', color: '#2097D1', marginRight: '10px'}} icon={faGithub} size='lg'/> 
+          </Link>
+        </div>
+        <div>
+          <div>Speak Out is an English Language School for Children that provides quality English learning to low
+          income families in Bahrain at affordable prices.
+          </div>
+
+          <div>
+            <div style={{fontStyle: 'italic', fontWeight: '400'}}>Worked as a full stack developer with a team of 6 developers and a UX designer.</div>
+            <li>Lead front end development</li>
+            <li>Implemented authentication, form handling, state management</li>
+            <li>Built functionalities such as registration, progress reports, and class enrollment </li>
+          </div>
+
+        </div>
+        <div className="tech">
+          <h2>Front End:</h2>
+          <p>React, Redux, Saas</p>
+          <h2>Back End:</h2>
+          <p>Node.js, PostgreSQL, AWS</p>
+        </div>
+      </div>
+      <div className="video-wrap">
+        <video loop autoPlay muted={true} playsInline>
+          <source src={video_speak_out} type="video/mp4" />
+        </video>
+      </div>
+
     </div>
   );
 };
