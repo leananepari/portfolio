@@ -32,12 +32,30 @@ html,body {
 
     .linkReg {
       text-decoration: none;
-      color: black;
       margin-right: 20px;
       color: white;
       font-weight: 230;
       font-size: 15px;
       padding-bottom: 5px;
+    }
+
+    .menu-wrap {
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      position: absolute;
+      box-shadow: 0 0 10px rgba(0,0,0,.2);
+
+      .menu-linkReg {
+        text-decoration: none;
+        color: black;
+        padding: 10px 10px 10px 2px;
+        font-size: 14px;
+        font-weight: 300;
+      }
+      .menu-linkReg:hover {
+        background-color: #efefef;
+      }
     }
   }
   .icons {
