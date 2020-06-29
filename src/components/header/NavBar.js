@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { NavLink as Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAt } from '@fortawesome/free-solid-svg-icons';
@@ -8,13 +8,27 @@ import { faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons';
 const Navbar = () => {
   const [width, setWidth] = useState();
   const [showMenu, setShowMenu] = useState(false);
+  const node = useRef();
 
   useEffect(() => {
 
     setWidth(window.innerWidth);
     window.addEventListener('resize', handleResize);
+    document.addEventListener("mousedown", handleClick);
+
+    //return function to be called when unmounted
+    return () => {
+      document.removeEventListener("mousedown", handleClick);
+    };
 
   }, [])
+
+  const handleClick = (e) => {
+    if (node.current.contains(e.target)) {
+      return; 
+    }
+    setShowMenu(false);
+  }
 
   const handleResize = () => {
     setWidth(window.innerWidth);
@@ -31,7 +45,7 @@ const Navbar = () => {
     <div className="navbar">
       <div className="links">
         {width <= 500 ? 
-          <div>
+          <div ref={node}>
             <svg viewBox="0 0 100 60" width="40" height="40" onClick={handleMenuClick} style={{cursor: 'pointer'}} 
                  >
               <rect width="90" height="11" rx="8" fill="white"></rect>

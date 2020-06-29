@@ -13,6 +13,7 @@ const ProjectList = () => {
   useEffect(() => {
     document.querySelector('video').playbackRate = 2;
   })
+
   return (
     // PREVIOUS PROJECT LIST
     // <div id='projects'>
@@ -42,7 +43,7 @@ const ProjectList = () => {
         </div>
       </div>
       <div className="video-wrap">
-        <video loop autoPlay muted={true} >
+        <video loop autoPlay muted={true} playsInline>
           <source src={video_To_Do} type="video/mp4" />
         </video>
       </div>
@@ -66,7 +67,7 @@ const ProjectList = () => {
         </div>
       </div>
       <div className="video-wrap">
-        <video loop autoPlay muted={true} >
+        <video loop autoPlay muted={true} playsInline>
           <source src={video_Game_of_Life} type="video/mp4" />
         </video>
       </div>
