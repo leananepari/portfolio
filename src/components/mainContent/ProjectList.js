@@ -55,7 +55,7 @@ const ProjectList = () => {
           <Link to="" target="_blank" onClick={(event) => {event.preventDefault(); window.open('https://github.com/leananepari/game-of-life');}} className="icon"> 
             <FontAwesomeIcon style={{width: '20px', cursor: 'pointer', color: '#2097D1', marginRight: '10px'}} icon={faGithub} size='lg'/> 
           </Link>
-          <Link to="" target="_blank" onClick={(event) => {event.preventDefault(); window.open('https://game-of-life-eight.now.sh/');}} className="icon"> 
+          <Link to="" target="_blank" onClick={(event) => {event.preventDefault(); window.open('https://game-of-life-roan.vercel.app/');}} className="icon"> 
             <FontAwesomeIcon style={{width: '20px', cursor: 'pointer', color: '#2097D1', marginRight: '10px'}} icon={faGlobe} size='lg'/> 
           </Link>
         </div>
@@ -68,7 +68,7 @@ const ProjectList = () => {
         </div>
       </div>
       <div className="video-wrap">
-        <video loop autoPlay muted={true} playsInline>
+        <video loop autoPlay muted={true} playsInline >
           <source src={video_Game_of_Life} type="video/mp4" />
         </video>
       </div>

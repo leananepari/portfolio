@@ -376,9 +376,14 @@ html,body {
       width: 50%;
       border: 0.9px solid #ada8a8;
       margin-bottom: 40px;
+      overflow: hidden;
 
       video {
         width: 100%;
+        height: auto;
+        background-size: cover;
+        object-fit: fill;
+        border-right: 0.9px solid #ada8a8;
       }
   }
 }
