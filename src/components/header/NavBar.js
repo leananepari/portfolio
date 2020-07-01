@@ -48,9 +48,9 @@ const Navbar = () => {
           <div ref={node}>
             <svg viewBox="0 0 100 60" width="40" height="40" onClick={handleMenuClick} style={{cursor: 'pointer'}} 
                  >
-              <rect width="90" height="11" rx="8" fill="white"></rect>
-              <rect y="25" width="90" height="11" rx="8" fill="white"></rect>
-              <rect y="50" width="90" height="11" rx="8" fill="white"></rect>
+              <rect width="90" height="6" rx="5" fill="white"></rect>
+              <rect y="25" width="90" height="6" rx="5" fill="white"></rect>
+              <rect y="50" width="90" height="6" rx="5" fill="white"></rect>
             </svg>
             {showMenu ? 
               <div className="menu-wrap">
