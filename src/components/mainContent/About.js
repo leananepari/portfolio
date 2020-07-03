@@ -11,12 +11,11 @@ const About = () => {
     <div id='about'>
       <div className="top-content">
         <div className="image-wrap"><img src={portrait} className="image" alt="portrait"/></div>
-        <p>I am a full-stack web developer based in Bay area. I value technical challenges and enjoy building beautiful applications.</p>
+        <p>I am a full-stack web developer based in the Bay Area. I value technical challenges and enjoy building beautiful applications.</p>
 
-        <p>Although formally educated in Journalism and then English,
-        I’ve been involved in software development for a couple of years. As a self-taught programmer, I identify my strengths as being passionate about what I do, constantly improving, and empathizing with others. </p>
+        <p>As a self-taught programmer, I identify my strengths as being passionate about what I do, constantly improving, and empathizing with others. </p>
 
-        <p>Currently, I work as a Team Lead at a coding bootcamp called Lambda School. I lead a group of students through a Computer Science curriculum, while guiding, mentoring, and supporting them with their learning journeys.</p>
+        <p>Currently, I work as a Team Lead at Lambda School. I lead a group of students through a Computer Science curriculum, while guiding, mentoring, and supporting them with their learning journeys.</p>
 
         <p>In my free time, I enjoy outdoor activities: hiking, biking, or picnicking at the local park.</p>
       </div>

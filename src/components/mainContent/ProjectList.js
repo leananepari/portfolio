@@ -38,9 +38,9 @@ const ProjectList = () => {
         </div>
         <div className="tech">
           <h2>Front End:</h2>
-          <p>React</p>
+          <p>React, Redux, Saas</p>
           <h2>Back End:</h2>
-          <p>Spring</p>
+          <p>Spring, PostgreSQL</p>
         </div>
       </div>
       <div className="video-wrap">
@@ -64,7 +64,7 @@ const ProjectList = () => {
         </div>
         <div className="tech">
           <h2>Front End:</h2>
-          <p>React</p>
+          <p>React, Saas</p>
         </div>
       </div>
       <div className="video-wrap">
