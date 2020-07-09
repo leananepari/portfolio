@@ -19,7 +19,7 @@ html, body {
   justify-content: space-between;
   align-items: center;
   height: 70px;
-  background-color: #2097D1;
+  background-color: #ECECEC;
   position: fixed;
   top: 0;
   z-index: 5;
@@ -29,7 +29,7 @@ html, body {
     .navbar .links .linkReg {
       text-decoration: none;
       margin-right: 20px;
-      color: white;
+      color: black;
       font-weight: 230;
       font-size: 15px;
       padding-bottom: 5px; }
@@ -56,86 +56,66 @@ html, body {
 /*==========================================================
   HOME
  =========================================================*/
-#home {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  background-color: #2097D1;
-  text-align: center;
-  color: white; }
-  #home h1 {
-    font-size: 28px;
-    font-weight: 300;
-    margin-bottom: 15px; }
-  #home h2 {
-    font-size: 18px;
-    font-weight: 150;
-    letter-spacing: 1px; }
-
-.home-projects-button {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #2097D1;
-  margin-top: 60px; }
-  .home-projects-button .linkReg {
-    text-decoration: none;
-    color: white;
-    letter-spacing: 1px;
-    background: rgba(34, 34, 34, 0.4);
-    padding: 15px 30px 15px 30px;
-    border-radius: 2px;
-    cursor: pointer; }
-  .home-projects-button .linkReg:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
-
 /*==========================================================
   ABOUT
  =========================================================*/
 #about {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  margin-bottom: 80px;
   margin-top: 140px; }
   #about .top-content {
-    margin-bottom: 40px;
-    width: 50%; }
-    #about .top-content .image-wrap {
-      width: 180px; }
-    #about .top-content .image {
-      width: 100%;
-      border-radius: 50%;
-      float: left;
-      margin-right: 10px; }
-    #about .top-content p {
-      margin-top: 10px;
-      color: #222222;
-      line-height: 20px;
-      font-size: 14px;
-      font-weight: 300; }
-  #about .bottom-content {
-    width: 50%; }
-    #about .bottom-content h2 {
-      margin-bottom: 10px;
-      color: #222222;
-      font-size: 18px;
-      font-weight: 600; }
-    #about .bottom-content .list {
-      display: flex;
-      flex-wrap: wrap;
-      margin-bottom: 20px;
-      color: #2097D1;
-      font-weight: 500;
-      font-size: 14px; }
-    #about .bottom-content .item {
-      margin-right: 10px;
-      margin-bottom: 5px; }
+    width: 80%;
+    display: flex; }
+    #about .top-content .left-box {
+      width: 60%;
+      margin-right: 20px; }
+      #about .top-content .left-box p {
+        margin-top: 10px;
+        color: #222222;
+        line-height: 20px;
+        font-size: 14px;
+        font-weight: 300; }
+      #about .top-content .left-box .name {
+        font-size: 34px; }
+      #about .top-content .left-box .title {
+        font-size: 14px;
+        font-weight: 200;
+        letter-spacing: 5px;
+        margin-left: 2px; }
+      #about .top-content .left-box .home-projects-button {
+        display: flex;
+        margin-top: 30px; }
+        #about .top-content .left-box .home-projects-button .linkReg {
+          text-decoration: none;
+          color: black;
+          letter-spacing: 1px;
+          background-color: #FFEA03;
+          padding: 15px 30px 15px 30px;
+          border-radius: 2px;
+          cursor: pointer; }
+        #about .top-content .left-box .home-projects-button .linkReg:hover {
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
+      #about .top-content .left-box .skills {
+        margin-top: 20px; }
+        #about .top-content .left-box .skills .list {
+          display: flex;
+          margin-top: 5px;
+          flex-wrap: wrap; }
+          #about .top-content .left-box .skills .list div {
+            margin-right: 5px;
+            margin-top: 5px;
+            color: #787878;
+            font-weight: 500;
+            text-decoration: underline; }
+    #about .top-content .right-box {
+      width: 40%; }
+      #about .top-content .right-box .image-wrap {
+        margin: 0 auto;
+        max-width: 390px;
+        min-width: 300px; }
+      #about .top-content .right-box .image {
+        width: 100%; }
 
 /*==========================================================
   FORM
@@ -176,8 +156,8 @@ html, body {
     margin: 0 auto;
     margin-top: 10px;
     border-radius: 2px;
-    background-color: #2097D1;
-    color: white;
+    background-color: #FFEA03;
+    color: black;
     font-size: 14px;
     cursor: pointer; }
   .form .btn-submit:hover {
@@ -310,7 +290,7 @@ hr {
 input, select {
   vertical-align: middle; }
 
-@media only screen and (min-width: 0px) and (max-width: 500px) {
+@media only screen and (min-width: 0px) and (max-width: 399px) {
   /*==========================================================
   BODY 
 =========================================================*/
@@ -327,17 +307,17 @@ input, select {
     justify-content: space-between;
     align-items: center;
     height: 70px;
-    background-color: #2097D1;
+    background-color: #ECECEC;
     position: fixed;
     top: 0;
     z-index: 5;
     width: 100%; }
     .navbar .links {
-      margin-left: 20px; }
+      margin-left: 40px; }
       .navbar .links .linkReg {
         text-decoration: none;
         margin-right: 20px;
-        color: white;
+        color: black;
         font-weight: 230;
         font-size: 15px;
         padding-bottom: 5px; }
@@ -357,92 +337,75 @@ input, select {
           background-color: #efefef; }
     .navbar .icons {
       display: flex;
-      margin-right: 20px; }
+      margin-right: 40px; }
       .navbar .icons .icon {
         margin-left: 20px; }
   /*==========================================================
   HOME
  =========================================================*/
-  #home {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #2097D1;
-    text-align: center;
-    color: white; }
-    #home h1 {
-      font-size: 24px;
-      font-weight: 300;
-      margin-bottom: 15px; }
-    #home h2 {
-      font-size: 16px;
-      font-weight: 150;
-      letter-spacing: 1px;
-      margin: 0 5px 0 5px;
-      line-height: 20px; }
-  .home-projects-button {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #2097D1;
-    margin-top: 50px; }
-    .home-projects-button .linkReg {
-      text-decoration: none;
-      color: white;
-      letter-spacing: 1px;
-      background: rgba(34, 34, 34, 0.4);
-      padding: 12px 27px 12px 27px;
-      border-radius: 2px;
-      cursor: pointer; }
-    .home-projects-button .linkReg:hover {
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
   /*==========================================================
   ABOUT
  =========================================================*/
   #about {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    margin-bottom: 80px;
     margin-top: 140px; }
     #about .top-content {
-      margin-bottom: 40px;
-      width: 70%; }
-      #about .top-content .image-wrap {
-        width: 160px; }
-      #about .top-content .image {
-        width: 100%;
-        border-radius: 50%;
-        float: left;
-        margin-right: 10px; }
-      #about .top-content p {
-        margin-top: 10px;
-        color: #222222;
-        line-height: 20px;
-        font-size: 14px;
-        font-weight: 300; }
-    #about .bottom-content {
-      width: 70%; }
-      #about .bottom-content h2 {
-        margin-bottom: 10px;
-        color: #222222;
-        font-size: 18px;
-        font-weight: 600; }
-      #about .bottom-content .list {
-        display: flex;
-        flex-wrap: wrap;
-        margin-bottom: 20px;
-        color: #2097D1;
-        font-weight: 500;
-        font-size: 14px; }
-      #about .bottom-content .item {
-        margin-right: 10px;
-        margin-bottom: 5px; }
+      display: flex;
+      flex-wrap: wrap; }
+      #about .top-content .left-box {
+        width: 90%;
+        margin-right: 0px;
+        position: relative;
+        margin-bottom: 20px; }
+        #about .top-content .left-box p {
+          margin-top: 10px;
+          color: #222222;
+          line-height: 20px;
+          font-size: 14px;
+          font-weight: 300; }
+        #about .top-content .left-box .name {
+          font-size: 28px; }
+        #about .top-content .left-box .title {
+          font-size: 12px;
+          font-weight: 200;
+          letter-spacing: 5px;
+          margin-left: 2px; }
+        #about .top-content .left-box .home-projects-button {
+          display: flex;
+          margin-top: 30px; }
+          #about .top-content .left-box .home-projects-button .linkReg {
+            text-decoration: none;
+            color: black;
+            letter-spacing: 1px;
+            background-color: #FFEA03;
+            padding: 10px 25px 10px 25px;
+            border-radius: 2px;
+            cursor: pointer; }
+          #about .top-content .left-box .home-projects-button .linkReg:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
+        #about .top-content .left-box .skills {
+          margin-top: 20px; }
+          #about .top-content .left-box .skills .list {
+            display: flex;
+            margin-top: 5px; }
+            #about .top-content .left-box .skills .list div {
+              margin-right: 5px;
+              color: #787878;
+              font-weight: 500;
+              text-decoration: underline; }
+      #about .top-content .right-box {
+        width: 0%;
+        margin-right: 0; }
+        #about .top-content .right-box .image-wrap {
+          width: 80%; }
+        #about .top-content .right-box .image {
+          width: 100%;
+          max-width: 90px;
+          min-width: 90px;
+          margin-left: -40px;
+          margin-top: -65px;
+          border-radius: 50%; }
   /*==========================================================
   FORM
  =========================================================*/
@@ -482,8 +445,8 @@ input, select {
       margin: 0 auto;
       margin-top: 10px;
       border-radius: 2px;
-      background-color: #2097D1;
-      color: white;
+      background-color: #FFEA03;
+      color: black;
       font-size: 14px;
       cursor: pointer; }
     .form .btn-submit:hover {
@@ -524,7 +487,7 @@ input, select {
         width: 100%; } }
 
 /* end of media query */
-@media only screen and (min-width: 501px) and (max-width: 1064px) {
+@media only screen and (min-width: 400px) and (max-width: 700px) {
   /*==========================================================
   BODY 
 =========================================================*/
@@ -541,7 +504,7 @@ input, select {
     justify-content: space-between;
     align-items: center;
     height: 70px;
-    background-color: #2097D1;
+    background-color: #ECECEC;
     position: fixed;
     top: 0;
     z-index: 5;
@@ -551,7 +514,7 @@ input, select {
       .navbar .links .linkReg {
         text-decoration: none;
         margin-right: 20px;
-        color: white;
+        color: black;
         font-weight: 230;
         font-size: 15px;
         padding-bottom: 5px; }
@@ -577,84 +540,69 @@ input, select {
   /*==========================================================
   HOME
  =========================================================*/
-  #home {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #2097D1;
-    text-align: center;
-    color: white; }
-    #home h1 {
-      font-size: 28px;
-      font-weight: 300;
-      margin-bottom: 15px; }
-    #home h2 {
-      font-size: 18px;
-      font-weight: 150;
-      letter-spacing: 1px; }
-  .home-projects-button {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #2097D1;
-    margin-top: 60px; }
-    .home-projects-button .linkReg {
-      text-decoration: none;
-      color: white;
-      letter-spacing: 1px;
-      background: rgba(34, 34, 34, 0.4);
-      padding: 15px 30px 15px 30px;
-      border-radius: 2px;
-      cursor: pointer; }
-    .home-projects-button .linkReg:hover {
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
   /*==========================================================
   ABOUT
  =========================================================*/
   #about {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    margin-bottom: 80px;
     margin-top: 140px; }
     #about .top-content {
-      margin-bottom: 40px;
-      width: 50%; }
-      #about .top-content .image-wrap {
-        width: 180px; }
-      #about .top-content .image {
-        width: 100%;
-        border-radius: 50%;
-        float: left;
-        margin-right: 10px; }
-      #about .top-content p {
-        margin-top: 10px;
-        color: #222222;
-        line-height: 20px;
-        font-size: 14px;
-        font-weight: 300; }
-    #about .bottom-content {
-      width: 50%; }
-      #about .bottom-content h2 {
-        margin-bottom: 10px;
-        color: #222222;
-        font-size: 18px;
-        font-weight: 600; }
-      #about .bottom-content .list {
-        display: flex;
-        flex-wrap: wrap;
-        margin-bottom: 20px;
-        color: #2097D1;
-        font-weight: 500;
-        font-size: 14px; }
-      #about .bottom-content .item {
-        margin-right: 10px;
-        margin-bottom: 5px; }
+      display: flex;
+      flex-wrap: wrap; }
+      #about .top-content .left-box {
+        width: 90%;
+        margin-right: 0px;
+        position: relative; }
+        #about .top-content .left-box p {
+          margin-top: 10px;
+          color: #222222;
+          line-height: 20px;
+          font-size: 14px;
+          font-weight: 300; }
+        #about .top-content .left-box .name {
+          font-size: 28px; }
+        #about .top-content .left-box .title {
+          font-size: 12px;
+          font-weight: 200;
+          letter-spacing: 5px;
+          margin-left: 2px; }
+        #about .top-content .left-box .home-projects-button {
+          display: flex;
+          margin-top: 30px; }
+          #about .top-content .left-box .home-projects-button .linkReg {
+            text-decoration: none;
+            color: black;
+            letter-spacing: 1px;
+            background-color: #FFEA03;
+            padding: 15px 30px 15px 30px;
+            border-radius: 2px;
+            cursor: pointer; }
+          #about .top-content .left-box .home-projects-button .linkReg:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
+        #about .top-content .left-box .skills {
+          margin-top: 20px; }
+          #about .top-content .left-box .skills .list {
+            display: flex;
+            margin-top: 5px; }
+            #about .top-content .left-box .skills .list div {
+              margin-right: 5px;
+              color: #787878;
+              font-weight: 500;
+              text-decoration: underline; }
+      #about .top-content .right-box {
+        width: 0%;
+        margin-right: 0; }
+        #about .top-content .right-box .image-wrap {
+          width: 80%; }
+        #about .top-content .right-box .image {
+          width: 100%;
+          max-width: 110px;
+          min-width: 110px;
+          position: absolute;
+          margin-left: -60px;
+          margin-top: -60px;
+          border-radius: 50%; }
   /*==========================================================
   FORM
  =========================================================*/
@@ -694,8 +642,8 @@ input, select {
       margin: 0 auto;
       margin-top: 10px;
       border-radius: 2px;
-      background-color: #2097D1;
-      color: white;
+      background-color: #FFEA03;
+      color: black;
       font-size: 14px;
       cursor: pointer; }
     .form .btn-submit:hover {

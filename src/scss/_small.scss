@@ -21,19 +21,19 @@ html,body {
   justify-content: space-between;
   align-items: center;
   height: 70px;
-  background-color: #2097D1;
+  background-color: #ECECEC;
   position: fixed;
   top: 0;
   z-index: 5;
   width: 100%;
 
   .links {
-    margin-left: 20px;
+    margin-left: 40px;
 
     .linkReg {
       text-decoration: none;
       margin-right: 20px;
-      color: white;
+      color: black;
       font-weight: 230;
       font-size: 15px;
       padding-bottom: 5px;
@@ -60,7 +60,7 @@ html,body {
   }
   .icons {
     display: flex;
-    margin-right: 20px;
+    margin-right: 40px;
 
     .icon {
       margin-left: 20px;
@@ -71,53 +71,54 @@ html,body {
 /*==========================================================
   HOME
  =========================================================*/
- #home {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   height: 100vh;
-   margin: 0;
-   background-color: #2097D1;
-   text-align: center;
-   color: white;
+//  #home {
+//    display: flex;
+//    flex-direction: column;
+//    justify-content: center;
+//    align-items: center;
+//    height: 100vh;
+//    margin: 0;
+//    background-color: #2097D1;
+//    text-align: center;
+//    color: white;
 
-   h1 {
-     font-size: 24px;
-     font-weight: 300;
-     margin-bottom: 15px;
-   }
-   h2 {
-     font-size: 16px;
-     font-weight: 150;
-     letter-spacing: 1px;
-     margin: 0 5px 0 5px;
-     line-height: 20px;
-   }
+//    h1 {
+//      font-size: 24px;
+//      font-weight: 300;
+//      margin-bottom: 15px;
+//    }
+//    h2 {
+//      font-size: 16px;
+//      font-weight: 150;
+//      letter-spacing: 1px;
+//      margin: 0 5px 0 5px;
+//      line-height: 20px;
+//    }
    
- }
+//  }
 
- .home-projects-button {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #2097D1;
-    margin-top: 50px;
+//  .home-projects-button {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   // background-color: #2097D1;
+//   margin-top: 60px;
 
-    .linkReg {
-      text-decoration: none;
-      color: white;
-      letter-spacing: 1px;
-      background: rgba(34, 34, 34, 0.4); 
-      padding: 12px 27px 12px 27px;
-      border-radius: 2px;
-      cursor: pointer;
-    }
-    .linkReg:hover {
-      box-shadow: 0 0 10px rgba(0,0,0,.2);
-    }
- }
+//   .linkReg {
+//     text-decoration: none;
+//     color: white;
+//     letter-spacing: 1px;
+//     // background: rgba(34, 34, 34, 0.4); 
+//     background-color: #2097D1;
+//     padding: 15px 30px 15px 30px;
+//     border-radius: 2px;
+//     cursor: pointer;
+//   }
+//   .linkReg:hover {
+//     box-shadow: 0 0 10px rgba(0,0,0,.2);
+//   }
+// }
 
 //  /*==========================================================
 //   PROJECTS
@@ -221,57 +222,92 @@ html,body {
  =========================================================*/
  #about {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  margin-bottom: 80px;
   margin-top: 140px;
 
   .top-content {
-    margin-bottom: 40px;
-    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
 
-    .image-wrap {
-      width: 160px;
-    }
-    .image {
-      width: 100%;
-      border-radius: 50%;
-      float: left;
-      margin-right: 10px;
-    }
-    p {
-      margin-top: 10px;
-      color: #222222;
-      line-height: 20px;
-      font-size: 14px;
-      font-weight: 300;
-    }
-  }
+    .left-box {
+      width: 90%;
+      margin-right: 0px;
+      position: relative;
+      margin-bottom: 20px;
 
-  .bottom-content {
-    width: 70%;
-  
-      h2 {
-        margin-bottom: 10px;
+      p {
+        margin-top: 10px;
         color: #222222;
-        font-size: 18px;
-        font-weight: 600;
+        line-height: 20px;
+        font-size: 14px;
+        font-weight: 300;
       }
+
+      .name {
+        font-size: 28px;
+      }
+
+      .title {
+        font-size: 12px; 
+        font-weight: 200; 
+        letter-spacing: 5px; 
+        margin-left: 2px;
+      }
+
+      .home-projects-button {
+        display: flex;
+        margin-top: 30px;
+    
+        .linkReg {
+          text-decoration: none;
+          color: black;
+          letter-spacing: 1px;
+          background-color: #FFEA03;
+          padding: 10px 25px 10px 25px;
+          border-radius: 2px;
+          cursor: pointer;
+        }
+        .linkReg:hover {
+          box-shadow: 0 0 10px rgba(0,0,0,.2);
+        }
+     }
+
+     .skills {
+       margin-top: 20px;
+
       .list {
         display: flex;
-        flex-wrap: wrap;
-        margin-bottom: 20px;
-        color: #2097D1;
-        font-weight: 500;
-        font-size: 14px
-      }
+        margin-top: 5px;
 
-      .item {
-        margin-right: 10px;
-        margin-bottom: 5px;
+        div {
+          margin-right: 5px;
+          color: #787878;
+          font-weight: 500;
+          text-decoration: underline;
+        }
       }
+     }
+    }
+
+    .right-box {
+      width: 0%;
+      margin-right: 0;
+
+      .image-wrap {
+        width: 80%;
+      }
+      .image {
+        width: 100%;
+        max-width: 90px;
+        min-width: 90px;
+        margin-left: -40px;
+        margin-top: -65px;
+        border-radius: 50%;
+      }
+    }
+  
   }
+
  }
 
  /*==========================================================
@@ -322,8 +358,8 @@ html,body {
      margin: 0 auto;
      margin-top: 10px;
      border-radius: 2px;
-     background-color: #2097D1;
-     color: white;
+     background-color: #FFEA03;
+     color: black;
      font-size: 14px;
      cursor: pointer;
    }

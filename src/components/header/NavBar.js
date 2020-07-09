@@ -54,9 +54,10 @@ const Navbar = () => {
             </svg>
             {showMenu ? 
               <div className="menu-wrap">
-                <Link exact to="/" className="menu-linkReg">HOME</Link>
+                {/* <Link exact to="/" className="menu-linkReg">HOME</Link> */}
+                <Link to="/" className="menu-linkReg">ABOUT</Link>
                 <Link to="/projects" className="menu-linkReg">PROJECTS</Link>
-                <Link to="/about" className="menu-linkReg">ABOUT</Link>
+                {/* <Link to="/about" className="menu-linkReg">ABOUT</Link> */}
               </div>
             :
             null
@@ -65,9 +66,9 @@ const Navbar = () => {
         : 
         width > 500 ?
           <div ref={node}>
-            <Link exact to="/" className="linkReg" activeStyle={{ borderBottom: '1px solid white' }}>HOME</Link>
-            <Link to="/projects" className="linkReg" activeStyle={{ borderBottom: '1px solid white' }}>PROJECTS</Link>
-            <Link to="/about" className="linkReg" activeStyle={{ borderBottom: '1px solid white' }}>ABOUT</Link>
+            <Link exact to="/" className="linkReg" activeStyle={{ borderBottom: '1px solid black' }}>ABOUT</Link>
+            {/* <Link to="/" className="linkReg" activeStyle={{ borderBottom: '1px solid white' }}>ABOUT</Link> */}
+            <Link to="/projects" className="linkReg" activeStyle={{ borderBottom: '1px solid black' }}>PROJECTS</Link>
           </div>
         : 
           null
@@ -77,15 +78,15 @@ const Navbar = () => {
       <div className="icons">
 
         <Link to="/emailme" className="icon">
-          <FontAwesomeIcon style={{width: '18px', cursor: 'pointer', color: 'white', borderBottom: '1px solid transparent' }} icon={faAt} size='lg'/> 
+          <FontAwesomeIcon style={{width: '18px', cursor: 'pointer', color: '#787878', borderBottom: '1px solid transparent' }} icon={faAt} size='lg'/> 
         </Link>
 
         <Link to="" target="_blank" onClick={(event) => {event.preventDefault(); window.open("https://www.linkedin.com/in/leana-neparidze");}} className="icon"> 
-          <FontAwesomeIcon style={{width: '18px', cursor: 'pointer', color: 'white', borderBottom: '1px solid transparent' }} icon={faLinkedin} size='lg'/> 
+          <FontAwesomeIcon style={{width: '18px', cursor: 'pointer', color: '#787878', borderBottom: '1px solid transparent' }} icon={faLinkedin} size='lg'/> 
         </Link>
 
         <Link to="" target="_blank" onClick={(event) => {event.preventDefault(); window.open("https://github.com/leananepari");}} className="icon"> 
-          <FontAwesomeIcon style={{width: '18px', cursor: 'pointer', color: 'white', borderBottom: '1px solid transparent' }} icon={faGithub} size='lg'/> 
+          <FontAwesomeIcon style={{width: '18px', cursor: 'pointer', color: '#787878', borderBottom: '1px solid transparent' }} icon={faGithub} size='lg'/> 
         </Link>
 
       </div>

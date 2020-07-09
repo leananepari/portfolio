@@ -30,7 +30,7 @@ const ProjectList = () => {
         <div style={{display: 'flex'}}>
           <h1>Task Manager App</h1>
           <Link to="" target="_blank" onClick={(event) => {event.preventDefault(); window.open('https://github.com/leananepari/to-do-app');}} className="icon"> 
-            <FontAwesomeIcon style={{width: '20px', cursor: 'pointer', color: '#2097D1', marginRight: '10px'}} icon={faGithub} size='lg'/> 
+            <FontAwesomeIcon style={{width: '20px', cursor: 'pointer', color: '#787878', marginRight: '10px', border: '1px solid #FFEA03', borderRadius: '50%'}} icon={faGithub} size='lg'/> 
           </Link>
         </div>
         <div>
@@ -53,10 +53,10 @@ const ProjectList = () => {
         <div style={{display: 'flex'}}>
           <h1>Game of Life</h1>
           <Link to="" target="_blank" onClick={(event) => {event.preventDefault(); window.open('https://github.com/leananepari/game-of-life');}} className="icon"> 
-            <FontAwesomeIcon style={{width: '20px', cursor: 'pointer', color: '#2097D1', marginRight: '10px'}} icon={faGithub} size='lg'/> 
+            <FontAwesomeIcon style={{width: '20px', cursor: 'pointer', color: '#787878', marginRight: '10px', border: '1px solid #FFEA03', borderRadius: '50%'}} icon={faGithub} size='lg'/> 
           </Link>
           <Link to="" target="_blank" onClick={(event) => {event.preventDefault(); window.open('https://game-of-life-roan.vercel.app/');}} className="icon"> 
-            <FontAwesomeIcon style={{width: '20px', cursor: 'pointer', color: '#2097D1', marginRight: '10px'}} icon={faGlobe} size='lg'/> 
+            <FontAwesomeIcon style={{width: '20px', cursor: 'pointer', color: '#787878', marginRight: '10px', border: '1px solid #FFEA03', borderRadius: '50%'}} icon={faGlobe} size='lg'/> 
           </Link>
         </div>
         <div>
@@ -77,7 +77,7 @@ const ProjectList = () => {
         <div style={{display: 'flex'}}>
           <h1>Speak Out, An English Language School</h1>
           <Link to="" target="_blank" onClick={(event) => {event.preventDefault(); window.open('https://github.com/Lambda-School-Labs/speak-out-fe');}} className="icon"> 
-            <FontAwesomeIcon style={{width: '20px', cursor: 'pointer', color: '#2097D1', marginRight: '10px'}} icon={faGithub} size='lg'/> 
+            <FontAwesomeIcon style={{width: '20px', cursor: 'pointer', color: '#787878', marginRight: '10px', border: '1px solid #FFEA03', borderRadius: '50%'}} icon={faGithub} size='lg'/> 
           </Link>
         </div>
         <div>
@@ -87,7 +87,7 @@ const ProjectList = () => {
 
           <div>
             <div style={{fontStyle: 'italic', fontWeight: '400'}}>Worked as a full stack developer with a team of 6 developers and a UX designer.</div>
-            <li>Lead front end development</li>
+            <li>Led front end development</li>
             <li>Implemented authentication, form handling, state management</li>
             <li>Built functionalities such as registration, progress reports, and class enrollment </li>
           </div>

@@ -21,7 +21,7 @@ html,body {
   justify-content: space-between;
   align-items: center;
   height: 70px;
-  background-color: #2097D1;
+  background-color: #ECECEC;
   position: fixed;
   top: 0;
   z-index: 5;
@@ -33,7 +33,7 @@ html,body {
     .linkReg {
       text-decoration: none;
       margin-right: 20px;
-      color: white;
+      color: black;
       font-weight: 230;
       font-size: 15px;
       padding-bottom: 5px;
@@ -71,51 +71,52 @@ html,body {
 /*==========================================================
   HOME
  =========================================================*/
- #home {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   height: 100vh;
-   margin: 0;
-   background-color: #2097D1;
-   text-align: center;
-   color: white;
+//  #home {
+//    display: flex;
+//    flex-direction: column;
+//    justify-content: center;
+//    align-items: center;
+//    height: 100vh;
+//    margin: 0;
+//    background-color: #2097D1;
+//    text-align: center;
+//    color: white;
 
-   h1 {
-     font-size: 28px;
-     font-weight: 300;
-     margin-bottom: 15px;
-   }
-   h2 {
-     font-size: 18px;
-     font-weight: 150;
-     letter-spacing: 1px;
-   }
+//    h1 {
+//      font-size: 28px;
+//      font-weight: 300;
+//      margin-bottom: 15px;
+//    }
+//    h2 {
+//      font-size: 18px;
+//      font-weight: 150;
+//      letter-spacing: 1px;
+//    }
    
- }
+//  }
 
- .home-projects-button {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #2097D1;
-    margin-top: 60px;
+//  .home-projects-button {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     // background-color: #2097D1;
+//     margin-top: 20px;
 
-    .linkReg {
-      text-decoration: none;
-      color: white;
-      letter-spacing: 1px;
-      background: rgba(34, 34, 34, 0.4); 
-      padding: 15px 30px 15px 30px;
-      border-radius: 2px;
-      cursor: pointer;
-    }
-    .linkReg:hover {
-      box-shadow: 0 0 10px rgba(0,0,0,.2);
-    }
- }
+//     .linkReg {
+//       text-decoration: none;
+//       color: white;
+//       letter-spacing: 1px;
+//       // background: rgba(34, 34, 34, 0.4); 
+//       background-color: #2097D1;
+//       padding: 15px 30px 15px 30px;
+//       border-radius: 2px;
+//       cursor: pointer;
+//     }
+//     .linkReg:hover {
+//       box-shadow: 0 0 10px rgba(0,0,0,.2);
+//     }
+//  }
 
 //  /*==========================================================
 //   PROJECTS
@@ -219,58 +220,88 @@ html,body {
  =========================================================*/
  #about {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  margin-bottom: 80px;
   margin-top: 140px;
 
   .top-content {
-    margin-bottom: 40px;
-    
-    width: 50%;
+    width: 80%;
+    display: flex;
 
-    .image-wrap {
-      width: 180px;
-    }
-    .image {
-      width: 100%;
-      border-radius: 50%;
-      float: left;
-      margin-right: 10px;
-    }
-    p {
-      margin-top: 10px;
-      color: #222222;
-      line-height: 20px;
-      font-size: 14px;
-      font-weight: 300;
-    }
-  }
+    .left-box {
+      width: 60%;
+      margin-right: 20px;
 
-  .bottom-content {
-    width: 50%;
-  
-      h2 {
-        margin-bottom: 10px;
+      p {
+        margin-top: 10px;
         color: #222222;
-        font-size: 18px;
-        font-weight: 600;
+        line-height: 20px;
+        font-size: 14px;
+        font-weight: 300;
       }
+
+      .name {
+        font-size: 34px;
+      }
+
+      .title {
+        font-size: 14px; 
+        font-weight: 200; 
+        letter-spacing: 5px; 
+        margin-left: 2px;
+      }
+
+      .home-projects-button {
+        display: flex;
+        margin-top: 30px;
+    
+        .linkReg {
+          text-decoration: none;
+          color: black;
+          letter-spacing: 1px;
+          background-color: #FFEA03;
+          padding: 15px 30px 15px 30px;
+          border-radius: 2px;
+          cursor: pointer;
+        }
+        .linkReg:hover {
+          box-shadow: 0 0 10px rgba(0,0,0,.2);
+        }
+     }
+
+     .skills {
+       margin-top: 20px;
+
       .list {
         display: flex;
+        margin-top: 5px;
         flex-wrap: wrap;
-        margin-bottom: 20px;
-        color: #2097D1;
-        font-weight: 500;
-        font-size: 14px
-      }
 
-      .item {
-        margin-right: 10px;
-        margin-bottom: 5px;
+        div {
+          margin-right: 5px;
+          margin-top: 5px;
+          color: #787878;
+          font-weight: 500;
+          text-decoration: underline;
+        }
       }
+     }
+    }
+
+    .right-box {
+      width: 40%;
+
+      .image-wrap {
+        margin: 0 auto;
+        max-width: 390px;
+        min-width: 300px;
+      }
+      .image {
+        width: 100%;
+      }
+    }
   }
+
  }
 
  /*==========================================================
@@ -321,8 +352,8 @@ html,body {
      margin: 0 auto;
      margin-top: 10px;
      border-radius: 2px;
-     background-color: #2097D1;
-     color: white;
+     background-color: #FFEA03;
+     color: black;
      font-size: 14px;
      cursor: pointer;
    }
