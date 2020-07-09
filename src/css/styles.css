@@ -656,27 +656,28 @@ input, select {
     flex-direction: column;
     align-items: center; }
     .content .project-description {
-      width: 50%; }
+      width: 70%; }
       .content .project-description h1 {
-        font-size: 24px;
+        font-size: 22px;
         font-weight: 400;
-        margin-bottom: 5px;
+        margin-bottom: 0px;
         margin-right: 10px; }
       .content .project-description div {
         font-weight: 200;
         margin-bottom: 10px;
-        line-height: 22px; }
+        line-height: 22px;
+        font-size: 14px; }
       .content .project-description .tech {
         line-height: 19px;
         margin-bottom: 25px; }
         .content .project-description .tech h2 {
           font-weight: 350;
-          font-size: 16px; }
+          font-size: 14px; }
         .content .project-description .tech p {
-          font-size: 15px;
+          font-size: 13px;
           margin-bottom: 10px; }
     .content .video-wrap {
-      width: 50%;
+      width: 70%;
       border: 0.9px solid #ada8a8;
       margin-bottom: 40px; }
       .content .video-wrap video {

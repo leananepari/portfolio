@@ -366,50 +366,51 @@ html,body {
 /*==========================================================
   PROJECTS
  =========================================================*/
-.content {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+ .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-   .project-description {
-     width: 50%;
+  .project-description {
+    width: 70%;
 
-     h1 {
-       font-size: 24px;
-       font-weight: 400;
-       margin-bottom: 5px;
-       margin-right: 10px;
+    h1 {
+      font-size: 22px;
+      font-weight: 400;
+      margin-bottom: 0px;
+      margin-right: 10px;
+    }
+    div {
+      font-weight: 200;
+      margin-bottom: 10px;
+      line-height: 22px;
+      font-size: 14px;
+    }
+
+    .tech {
+      line-height: 19px;
+      margin-bottom: 25px;
+
+     h2 {
+       font-weight: 350;
+       font-size: 14px;
      }
-     div {
-       font-weight: 200;
+
+     p {
+       font-size: 13px;
        margin-bottom: 10px;
-       line-height: 22px;
      }
-
-     .tech {
-       line-height: 19px;
-       margin-bottom: 25px;
-
-      h2 {
-        font-weight: 350;
-        font-size: 16px;
-      }
-
-      p {
-        font-size: 15px;
-        margin-bottom: 10px;
-      }
-      
-     }
-   }
-
-   .video-wrap {
-      width: 50%;
-      border: 0.9px solid #ada8a8;
-      margin-bottom: 40px;
-
-      video {
-        width: 100%;
-      }
+     
+    }
   }
+
+  .video-wrap {
+     width: 70%;
+     border: 0.9px solid #ada8a8;
+     margin-bottom: 40px;
+
+     video {
+       width: 100%;
+     }
+ }
 }
