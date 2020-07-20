@@ -54,10 +54,9 @@ const Navbar = () => {
             </svg>
             {showMenu ? 
               <div className="menu-wrap">
-                {/* <Link exact to="/" className="menu-linkReg">HOME</Link> */}
                 <Link to="/" className="menu-linkReg">ABOUT</Link>
                 <Link to="/projects" className="menu-linkReg">PROJECTS</Link>
-                {/* <Link to="/about" className="menu-linkReg">ABOUT</Link> */}
+                <Link to="/resume" className="menu-linkReg" >RESUME</Link>
               </div>
             :
             null
@@ -67,8 +66,8 @@ const Navbar = () => {
         width > 500 ?
           <div ref={node}>
             <Link exact to="/" className="linkReg" activeStyle={{ borderBottom: '1px solid black' }}>ABOUT</Link>
-            {/* <Link to="/" className="linkReg" activeStyle={{ borderBottom: '1px solid white' }}>ABOUT</Link> */}
             <Link to="/projects" className="linkReg" activeStyle={{ borderBottom: '1px solid black' }}>PROJECTS</Link>
+            <Link to="/resume" className="linkReg" activeStyle={{ borderBottom: '1px solid black' }}>RESUME</Link>
           </div>
         : 
           null

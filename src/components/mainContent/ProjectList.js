@@ -1,7 +1,5 @@
 import React, { useEffect } from 'react';
 import { NavLink as Link } from 'react-router-dom';
-import { projects } from '../../data';
-import ProjectCard from './ProjectCard';
 import video_To_Do from '../../assets/to-do-video.mp4';
 import video_Game_of_Life from '../../assets/game-of-life.mp4';
 import video_speak_out from '../../assets/speak-out-vid-new.mp4';
@@ -16,14 +14,6 @@ const ProjectList = () => {
   })
 
   return (
-    // PREVIOUS PROJECT LIST
-    // <div id='projects'>
-    //   {/* {projects.map((project) => {
-    //     return <ProjectCard project={project} key={project.name}/>
-    //   })} */}
-    //   <p style={{margin: '100px'}}>Updating project list</p>
-    // </div>
-
     <div className="content" style={{marginTop: '120px'}}>
 
       <div className="project-description">

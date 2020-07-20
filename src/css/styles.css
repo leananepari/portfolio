@@ -202,6 +202,59 @@ html, body {
       object-fit: fill;
       border-right: 0.9px solid #ada8a8; }
 
+/*==========================================================
+  RESUME
+ =========================================================*/
+.resume {
+  margin-top: 110px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column; }
+  .resume .skills-table {
+    width: 50%;
+    margin: 0 auto;
+    font-weight: 200; }
+    .resume .skills-table .cell {
+      display: grid;
+      text-align: left;
+      grid-template-columns: repeat(2, 1fr);
+      border-bottom: 3px solid #ECECEC;
+      border-left: 3px solid #ECECEC;
+      border-right: 3px solid #ECECEC; }
+  .resume .email {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    font-weight: 200; }
+    .resume .email .email-word {
+      margin-right: 5px;
+      font-weight: 500;
+      text-decoration: underline; }
+  .resume .experiences {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 40px; }
+    .resume .experiences h1 {
+      font-size: 20px;
+      font-weight: 600; }
+    .resume .experiences .experience {
+      margin-bottom: 20px;
+      margin-top: 20px; }
+      .resume .experiences .experience .company {
+        font-size: 18px;
+        margin-top: 10px;
+        font-weight: 500; }
+      .resume .experiences .experience .date {
+        font-size: 14px;
+        font-style: italic;
+        margin-top: 10px;
+        font-weight: 200; }
+      .resume .experiences .experience .description {
+        font-size: 14px;
+        margin-top: 10px;
+        font-weight: 200;
+        line-height: 20px; }
+
 /*
 html5doctor.com Reset Stylesheet
 v1.6.1
@@ -484,7 +537,61 @@ input, select {
       border: 0.9px solid #ada8a8;
       margin-bottom: 40px; }
       .content .video-wrap video {
-        width: 100%; } }
+        width: 100%; }
+  /*==========================================================
+  RESUME
+ =========================================================*/
+  .resume {
+    margin-top: 110px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column; }
+    .resume .skills-table {
+      width: 80%;
+      margin: 0 auto;
+      font-weight: 200;
+      line-height: 25px; }
+      .resume .skills-table .cell {
+        display: grid;
+        text-align: left;
+        grid-template-columns: repeat(2, 1fr);
+        border-bottom: 3px solid #ECECEC;
+        border-left: 3px solid #ECECEC;
+        border-right: 3px solid #ECECEC; }
+    .resume .email {
+      display: flex;
+      justify-content: center;
+      margin-top: 15px;
+      font-weight: 200; }
+      .resume .email .email-word {
+        margin-right: 5px;
+        font-weight: 500;
+        text-decoration: underline; }
+    .resume .experiences {
+      width: 80%;
+      margin: 0 auto;
+      margin-top: 40px; }
+      .resume .experiences h1 {
+        font-size: 18px;
+        font-weight: 600; }
+      .resume .experiences .experience {
+        margin-bottom: 20px;
+        margin-top: 20px; }
+        .resume .experiences .experience .company {
+          font-size: 16px;
+          margin-top: 10px;
+          font-weight: 500; }
+        .resume .experiences .experience .date {
+          font-size: 12px;
+          font-style: italic;
+          margin-top: 10px;
+          font-weight: 200;
+          line-height: 20px; }
+        .resume .experiences .experience .description {
+          font-size: 12px;
+          margin-top: 10px;
+          font-weight: 200;
+          line-height: 20px; } }
 
 /* end of media query */
 @media only screen and (min-width: 400px) and (max-width: 700px) {
@@ -681,7 +788,61 @@ input, select {
       border: 0.9px solid #ada8a8;
       margin-bottom: 40px; }
       .content .video-wrap video {
-        width: 100%; } }
+        width: 100%; }
+  /*==========================================================
+  RESUME
+ =========================================================*/
+  .resume {
+    margin-top: 110px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column; }
+    .resume .skills-table {
+      width: 80%;
+      margin: 0 auto;
+      font-weight: 200;
+      line-height: 25px; }
+      .resume .skills-table .cell {
+        display: grid;
+        text-align: left;
+        grid-template-columns: repeat(2, 1fr);
+        border-bottom: 3px solid #ECECEC;
+        border-left: 3px solid #ECECEC;
+        border-right: 3px solid #ECECEC; }
+    .resume .email {
+      display: flex;
+      justify-content: center;
+      margin-top: 15px;
+      font-weight: 200; }
+      .resume .email .email-word {
+        margin-right: 5px;
+        font-weight: 500;
+        text-decoration: underline; }
+    .resume .experiences {
+      width: 80%;
+      margin: 0 auto;
+      margin-top: 40px; }
+      .resume .experiences h1 {
+        font-size: 18px;
+        font-weight: 600; }
+      .resume .experiences .experience {
+        margin-bottom: 20px;
+        margin-top: 20px; }
+        .resume .experiences .experience .company {
+          font-size: 16px;
+          margin-top: 10px;
+          font-weight: 500; }
+        .resume .experiences .experience .date {
+          font-size: 12px;
+          font-style: italic;
+          margin-top: 10px;
+          font-weight: 200;
+          line-height: 20px; }
+        .resume .experiences .experience .description {
+          font-size: 12px;
+          margin-top: 10px;
+          font-weight: 200;
+          line-height: 20px; } }
 
 /* end of media query */
 /* end of media query */
