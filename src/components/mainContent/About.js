@@ -24,15 +24,15 @@ const About = (props) => {
           <div className="skills">
             <h2>skills</h2>
             <div className="list">
-              <div className="item">JavaScript</div>
-              <div className="item">React</div>
-              <div className="item">Redux</div>
-              <div className="item">Node</div>
-              <div className="item">Express</div>
-              <div className="item">Python</div>
-              <div className="item">Django</div>
-              <div className="item">PostgreSQL</div>
-              <div className="item">Java</div>
+              <div className="item">JavaScript |</div>
+              <div className="item">React |</div>
+              <div className="item">Redux |</div>
+              <div className="item">Node |</div>
+              <div className="item">Express |</div>
+              <div className="item">Python |</div>
+              <div className="item">Django |</div>
+              <div className="item">PostgreSQL |</div>
+              <div className="item">Java |</div>
               <div className="item">Spring</div>
             </div>
           </div>

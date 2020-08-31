@@ -106,8 +106,7 @@ html, body {
             margin-right: 5px;
             margin-top: 5px;
             color: #787878;
-            font-weight: 500;
-            text-decoration: underline; }
+            font-weight: 500; }
     #about .top-content .right-box {
       width: 40%; }
       #about .top-content .right-box .image-wrap {
@@ -230,6 +229,11 @@ html, body {
       margin-right: 5px;
       font-weight: 500;
       text-decoration: underline; }
+  .resume .resume-download {
+    display: flex;
+    justify-content: center; }
+    .resume .resume-download a {
+      margin-bottom: 10px; }
   .resume .experiences {
     width: 80%;
     margin: 0 auto;
@@ -445,8 +449,7 @@ input, select {
             #about .top-content .left-box .skills .list div {
               margin-right: 5px;
               color: #787878;
-              font-weight: 500;
-              text-decoration: underline; }
+              font-weight: 500; }
       #about .top-content .right-box {
         width: 0%;
         margin-right: 0; }
@@ -550,7 +553,8 @@ input, select {
       width: 80%;
       margin: 0 auto;
       font-weight: 200;
-      line-height: 25px; }
+      line-height: 25px;
+      font-size: 14px; }
       .resume .skills-table .cell {
         display: grid;
         text-align: left;
@@ -567,6 +571,11 @@ input, select {
         margin-right: 5px;
         font-weight: 500;
         text-decoration: underline; }
+    .resume .resume-download {
+      display: flex;
+      justify-content: center; }
+      .resume .resume-download a {
+        margin-bottom: 10px; }
     .resume .experiences {
       width: 80%;
       margin: 0 auto;
@@ -695,8 +704,7 @@ input, select {
             #about .top-content .left-box .skills .list div {
               margin-right: 5px;
               color: #787878;
-              font-weight: 500;
-              text-decoration: underline; }
+              font-weight: 500; }
       #about .top-content .right-box {
         width: 0%;
         margin-right: 0; }
@@ -818,12 +826,17 @@ input, select {
         margin-right: 5px;
         font-weight: 500;
         text-decoration: underline; }
+    .resume .resume-download {
+      display: flex;
+      justify-content: center; }
+      .resume .resume-download a {
+        margin-bottom: 10px; }
     .resume .experiences {
       width: 80%;
       margin: 0 auto;
       margin-top: 40px; }
       .resume .experiences h1 {
-        font-size: 18px;
+        font-size: 22px;
         font-weight: 600; }
       .resume .experiences .experience {
         margin-bottom: 20px;
@@ -833,13 +846,13 @@ input, select {
           margin-top: 10px;
           font-weight: 500; }
         .resume .experiences .experience .date {
-          font-size: 12px;
+          font-size: 14px;
           font-style: italic;
           margin-top: 10px;
           font-weight: 200;
           line-height: 20px; }
         .resume .experiences .experience .description {
-          font-size: 12px;
+          font-size: 14px;
           margin-top: 10px;
           font-weight: 200;
           line-height: 20px; } }

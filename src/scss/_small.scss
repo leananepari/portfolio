@@ -283,7 +283,6 @@ html,body {
           margin-right: 5px;
           color: #787878;
           font-weight: 500;
-          text-decoration: underline;
         }
       }
      }
@@ -434,6 +433,7 @@ html,body {
     margin: 0 auto;
     font-weight: 200;
     line-height: 25px;
+    font-size: 14px;
 
     .cell {
       display: grid; 
@@ -457,6 +457,14 @@ html,body {
       text-decoration: underline;
     }
     
+  }
+    .resume-download {
+    display: flex;
+    justify-content: center;
+
+    a {
+      margin-bottom: 10px;
+    }
   }
 
   .experiences {

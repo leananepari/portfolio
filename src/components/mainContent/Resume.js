@@ -1,11 +1,15 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircle } from '@fortawesome/free-solid-svg-icons';
+import resume from '../../assets/Leana_Neparidze_Resume.pdf';
 
 const Resume = () => {
 
   return (
     <div className="resume">
+      <div className="resume-download">
+        <a href={resume} download="Leana_Neparidze_Resume.pdf"> Download Resume </a>
+      </div>
       <div className="skills-table">
         <div className="cell" style={{border: '3px solid #ECECEC'}}>
           <div style={{backgroundColor: '#E5E5E5', padding: '5px', paddingLeft: '10px', borderRight: '3px solid #ECECEC', letterSpacing: '1px', fontWeight: '500'}}>
@@ -59,9 +63,12 @@ const Resume = () => {
 
       </div>
 
-      <div className="email">
+      <div className="email" >
         <div className="email-word">Email</div> leananeparidze@gmail.com
       </div>
+      {/* <div className="resume-download">
+        <a href={resume} download="Leana_Neparidze_Resume.pdf"> Download Resume </a>
+      </div> */}
 
       <div className="experiences">
           <h1>
