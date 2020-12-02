@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { NavLink as Link } from 'react-router-dom';
-import video_To_Do from '../../assets/to-do-video.mp4';
+import video_To_Do from '../../assets/task-manager-demo.mov';
 import video_Game_of_Life from '../../assets/game-of-life.mp4';
 import video_speak_out from '../../assets/speak-out-vid-new.mp4';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
