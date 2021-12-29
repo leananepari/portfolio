@@ -6,6 +6,7 @@ import About from '../components/mainContent/About';
 import NavBar from '../components/header/NavBar';
 import Form from '../components/mainContent/Form';
 import Resume from '../components/mainContent/Resume';
+import Footer from '../components/footer/Footer';
 
 const App = () => {
 
@@ -19,6 +20,8 @@ const App = () => {
         <Route exact path='/resume' component={Resume} />
         <Route  path='/emailme' component={Form} />
       </Switch>
+
+      <Footer/>
 
     </div>
   );

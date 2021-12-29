@@ -113,7 +113,7 @@ const Form = () => {
         value={state.message}
         style={{border: `${errorBorderMessage ? '1px solid #f59c9c' : '1px solid lightgray'}`}}
       />
-    	<input type="button" value="send" className="btn-submit" onClick={handleSubmit} />
+    	<input type="button" value="Send" className="btn-submit" onClick={handleSubmit} />
   	</form>
   );
 };

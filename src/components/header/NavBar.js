@@ -1,8 +1,8 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { NavLink as Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAt } from '@fortawesome/free-solid-svg-icons';
-import { faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons';
+import linkedin from '../../assets/linkedin.png';
+import github from '../../assets/github.png';
+import atsign from '../../assets/atsign.png';
 
 
 const Navbar = () => {
@@ -77,15 +77,15 @@ const Navbar = () => {
       <div className="icons">
 
         <Link to="/emailme" className="icon">
-          <FontAwesomeIcon style={{width: '18px', cursor: 'pointer', color: '#787878', borderBottom: '1px solid transparent' }} icon={faAt} size='lg'/> 
+          <img src={atsign} style={{width: '18px', cursor: 'pointer', color: '#787878', borderBottom: '1px solid transparent' }}/>
         </Link>
 
         <Link to="" target="_blank" onClick={(event) => {event.preventDefault(); window.open("https://www.linkedin.com/in/leana-neparidze");}} className="icon"> 
-          <FontAwesomeIcon style={{width: '18px', cursor: 'pointer', color: '#787878', borderBottom: '1px solid transparent' }} icon={faLinkedin} size='lg'/> 
+          <img src={linkedin} style={{width: '18px', cursor: 'pointer', color: '#787878', borderBottom: '1px solid transparent' }}/>
         </Link>
 
         <Link to="" target="_blank" onClick={(event) => {event.preventDefault(); window.open("https://github.com/leananepari");}} className="icon"> 
-          <FontAwesomeIcon style={{width: '18px', cursor: 'pointer', color: '#787878', borderBottom: '1px solid transparent' }} icon={faGithub} size='lg'/> 
+          <img src={github} style={{width: '18px', cursor: 'pointer', color: '#787878', borderBottom: '1px solid transparent' }}/>
         </Link>
 
       </div>

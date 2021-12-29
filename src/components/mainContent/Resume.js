@@ -16,7 +16,7 @@ const Resume = () => {
             LANGUAGES
           </div>
           <div style={{backgroundColor: '#E5E5E5', padding: '5px'}}>
-            JavaScript, Python, Java
+            Golang, JavaScript, Python
           </div>
           
         </div>
@@ -26,7 +26,7 @@ const Resume = () => {
             FRONTEND
           </div>
           <div style={{backgroundColor: '#E5E5E5', padding: '5px'}}>
-            React.js, Redux, HTML5, CSS3, Saas, LESS
+            React.js, Vue.js, Redux, HTML5, CSS3, Saas
           </div>
           
         </div>
@@ -36,7 +36,7 @@ const Resume = () => {
             BACKEND
           </div>
           <div style={{backgroundColor: '#E5E5E5', padding: '5px'}}>
-            Spring, Node, Django
+            Gin, Spring, Node
           </div>
           
         </div>
@@ -46,7 +46,7 @@ const Resume = () => {
             DATABASES
           </div>
           <div style={{backgroundColor: '#E5E5E5', padding: '5px'}}>
-            PostgreSQL
+            PostgreSQL, DynamoDB
           </div>
           
         </div>
@@ -74,6 +74,22 @@ const Resume = () => {
           <h1>
             EXPERIENCE
           </h1>
+
+          <div className="experience">
+            <div className="company">
+              Northwestern Mutual - Software Engineer 
+            </div>
+            <div className="date">
+              Remote, Jan 2021 - Present
+            </div>
+            <div className="description">
+              <div><FontAwesomeIcon style={{width: '8px', height: '8px', cursor: 'pointer', color: '#787878', marginRight: '5px', marginBottom: '4px'}} icon={faCircle} size='lg'/>Develop internal and customer-facing features across microservices using Go, AWS (SQS, SNS, Lambda, S3, DynamoDB), and Vue</div>
+              <div><FontAwesomeIcon style={{width: '8px', height: '8px', cursor: 'pointer', color: '#787878', marginRight: '5px', marginBottom: '4px'}} icon={faCircle} size='lg'/>Provisioned AWS cloud infrastructure using CDK (Python)</div>
+              <div><FontAwesomeIcon style={{width: '8px', height: '8px', cursor: 'pointer', color: '#787878', marginRight: '5px', marginBottom: '4px'}} icon={faCircle} size='lg'/>Built internal tool using React and Go to help our marketing team perform admin tasks on customer-facing applications</div>
+              <div><FontAwesomeIcon style={{width: '8px', height: '8px', cursor: 'pointer', color: '#787878', marginRight: '5px', marginBottom: '4px'}} icon={faCircle} size='lg'/>Technology Stack: Go, AWS, JavaScript, Python</div>
+            </div>
+          </div>
+
           <div className="experience">
             <div className="company">
               Lambda School - Team Lead

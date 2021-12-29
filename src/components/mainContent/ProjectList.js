@@ -3,9 +3,7 @@ import { NavLink as Link } from 'react-router-dom';
 import video_To_Do from '../../assets/task-manager-demo.mov';
 import video_Game_of_Life from '../../assets/game-of-life.mp4';
 import video_speak_out from '../../assets/speak-out-vid-new.mp4';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faGlobe } from '@fortawesome/free-solid-svg-icons';
+import github from '../../assets/github.png';
 
 const ProjectList = () => {
   
@@ -20,9 +18,12 @@ const ProjectList = () => {
         <div style={{display: 'flex'}}>
           <h1>Task Manager App</h1>
           <Link to="" target="_blank" onClick={(event) => {event.preventDefault(); window.open('https://github.com/leananepari/to-do-app');}} className="icon"> 
-            <FontAwesomeIcon style={{width: '20px', cursor: 'pointer', color: '#787878', marginRight: '10px', border: '1px solid #FFEA03', borderRadius: '50%'}} icon={faGithub} size='lg'/> 
+            <img src={github} style={{width: '20px', cursor: 'pointer', color: '#787878', marginRight: '10px'}} />
           </Link>
         </div>
+        <Link to="" target="_blank" onClick={(event) => {event.preventDefault(); window.open('https://to-do-app-five.vercel.app/login');}} className="website-link">
+          <div>https://to-do-app-five.vercel.app/login</div>
+        </Link>
         <div>
           Currently working on building a full-stack application that lets you add tasks, set due dates, get reminders, and customize themes.
         </div>
@@ -43,12 +44,12 @@ const ProjectList = () => {
         <div style={{display: 'flex'}}>
           <h1>Game of Life</h1>
           <Link to="" target="_blank" onClick={(event) => {event.preventDefault(); window.open('https://github.com/leananepari/game-of-life');}} className="icon"> 
-            <FontAwesomeIcon style={{width: '20px', cursor: 'pointer', color: '#787878', marginRight: '10px', border: '1px solid #FFEA03', borderRadius: '50%'}} icon={faGithub} size='lg'/> 
-          </Link>
-          <Link to="" target="_blank" onClick={(event) => {event.preventDefault(); window.open('https://game-of-life-roan.vercel.app/');}} className="icon"> 
-            <FontAwesomeIcon style={{width: '20px', cursor: 'pointer', color: '#787878', marginRight: '10px', border: '1px solid #FFEA03', borderRadius: '50%'}} icon={faGlobe} size='lg'/> 
+            <img src={github} style={{width: '20px', cursor: 'pointer', color: '#787878', marginRight: '10px'}} />
           </Link>
         </div>
+        <Link to="" target="_blank" onClick={(event) => {event.preventDefault(); window.open('https://game-of-life-roan.vercel.app/');}} className="website-link">
+          <div>hhttps://game-of-life-roan.vercel.app/</div>
+        </Link>
         <div>
           A fun, small project I got to build while going through computer science build week with my students.
         </div>
@@ -67,7 +68,8 @@ const ProjectList = () => {
         <div style={{display: 'flex'}}>
           <h1>Speak Out, An English Language School</h1>
           <Link to="" target="_blank" onClick={(event) => {event.preventDefault(); window.open('https://github.com/Lambda-School-Labs/speak-out-fe');}} className="icon"> 
-            <FontAwesomeIcon style={{width: '20px', cursor: 'pointer', color: '#787878', marginRight: '10px', border: '1px solid #FFEA03', borderRadius: '50%'}} icon={faGithub} size='lg'/> 
+            {/* <FontAwesomeIcon style={{width: '20px', cursor: 'pointer', color: '#787878', marginRight: '10px', border: '1px solid #FFEA03', borderRadius: '50%'}} icon={faGithub} size='lg'/>  */}
+            <img src={github} style={{width: '20px', cursor: 'pointer', color: '#787878', marginRight: '10px'}} />
           </Link>
         </div>
         <div>

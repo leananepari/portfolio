@@ -1,16 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,700,900');
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,700,900");
 
 /*==========================================================
   BODY 
 =========================================================*/
 
-body{
+body {
   margin: 0;
-  font-family: BlinkMacSystemFont, Helvetica Neue,sans-serif;
+  font-family: BlinkMacSystemFont, Helvetica Neue, sans-serif;
 }
 
-html,body {
-  overflow-x: hidden; 
+html,
+body {
+  overflow-x: hidden;
 }
 
 /*==========================================================
@@ -21,7 +22,7 @@ html,body {
   justify-content: space-between;
   align-items: center;
   height: 70px;
-  background-color: #ECECEC;
+  background-color: #ececec;
   position: fixed;
   top: 0;
   z-index: 5;
@@ -44,7 +45,7 @@ html,body {
       flex-direction: column;
       background-color: white;
       position: absolute;
-      box-shadow: 0 0 10px rgba(0,0,0,.2);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 
       .menu-linkReg {
         text-decoration: none;
@@ -94,7 +95,7 @@ html,body {
 //      margin: 0 5px 0 5px;
 //      line-height: 20px;
 //    }
-   
+
 //  }
 
 //  .home-projects-button {
@@ -109,7 +110,7 @@ html,body {
 //     text-decoration: none;
 //     color: white;
 //     letter-spacing: 1px;
-//     // background: rgba(34, 34, 34, 0.4); 
+//     // background: rgba(34, 34, 34, 0.4);
 //     background-color: #2097D1;
 //     padding: 15px 30px 15px 30px;
 //     border-radius: 2px;
@@ -127,7 +128,7 @@ html,body {
 //    display: flex;
 //    justify-content: center;
 //    flex-wrap: wrap;
-//    padding-top: 70px;   
+//    padding-top: 70px;
 
 //    .project-card {
 //     display: flex;
@@ -140,15 +141,14 @@ html,body {
 //     box-sizing: border-box;
 //     cursor: pointer;
 //     transition: transform .2s; /* Animation */
-   
-    
+
 //    .logo {
 //      display: flex;
 //      align-items: center;
 //      height: 80%;
-  
+
 //     }
- 
+
 //    .technologies {
 //      display: flex;
 //      justify-content: center;
@@ -156,7 +156,7 @@ html,body {
 //      width: 100%;
 //      align-self: flex-end;
 //      height: 20%;
- 
+
 //      .item {
 //        color: white;
 //        font-weight: 200;
@@ -171,8 +171,8 @@ html,body {
 //       flex-direction: column;
 
 //       .title-wrap {
-//         display: flex; 
-//         justify-content: space-between; 
+//         display: flex;
+//         justify-content: space-between;
 //         align-items: center;
 
 //         h1 {
@@ -212,15 +212,13 @@ html,body {
 //   .project-card:hover {
 //      transform: scale(1.004);
 //   }
-  
+
 //  }
 
-
-
- /*==========================================================
+/*==========================================================
   ABOUT
  =========================================================*/
- #about {
+#about {
   display: flex;
   align-items: center;
   margin-top: 140px;
@@ -228,6 +226,7 @@ html,body {
   .top-content {
     display: flex;
     flex-wrap: wrap;
+    width: 80%;
 
     .left-box {
       width: 90%;
@@ -248,44 +247,44 @@ html,body {
       }
 
       .title {
-        font-size: 12px; 
-        font-weight: 200; 
-        letter-spacing: 5px; 
+        font-size: 12px;
+        font-weight: 200;
+        letter-spacing: 5px;
         margin-left: 2px;
       }
 
       .home-projects-button {
         display: flex;
         margin-top: 30px;
-    
+
         .linkReg {
           text-decoration: none;
           color: black;
           letter-spacing: 1px;
-          background-color: #FFEA03;
+          background-color: #ffea03;
           padding: 10px 25px 10px 25px;
           border-radius: 2px;
           cursor: pointer;
         }
         .linkReg:hover {
-          box-shadow: 0 0 10px rgba(0,0,0,.2);
-        }
-     }
-
-     .skills {
-       margin-top: 20px;
-
-      .list {
-        display: flex;
-        margin-top: 5px;
-
-        div {
-          margin-right: 5px;
-          color: #787878;
-          font-weight: 500;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         }
       }
-     }
+
+      .skills {
+        margin-top: 20px;
+
+        .list {
+          display: flex;
+          margin-top: 5px;
+
+          div {
+            margin-right: 5px;
+            color: #787878;
+            font-weight: 500;
+          }
+        }
+      }
     }
 
     .right-box {
@@ -304,96 +303,94 @@ html,body {
         border-radius: 50%;
       }
     }
-  
   }
+}
 
- }
-
- /*==========================================================
+/*==========================================================
   FORM
  =========================================================*/
- .form {
-   display: flex;
-   justify-items: center;
-   flex-direction: column;
-   width: 70%;
-   margin: 0 auto;
-   font-size: 18px;
-   margin-top: 140px;
+.form {
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+  width: 70%;
+  margin: 0 auto;
+  font-size: 18px;
+  margin-top: 140px;
 
-   .success-or-failure-message {
-     display: flex;
-     align-items: center;
-     margin-bottom: 15px;
+  .success-or-failure-message {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
 
-     p {
-       font-size: 14px;
-     }
-   }
+    p {
+      font-size: 14px;
+    }
+  }
 
-   h1 {
-     color: #222222;
-     margin-bottom: 10px;
-     font-weight: 500;
-   }
+  h1 {
+    color: #222222;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
 
-   input {
-     width: 100%;
-     height: 20px;
-     border: 1px solid lightgray;
-     margin-bottom: 10px;
-     outline: none;
-     font-size: 14px;
-   }
-   textarea {
-     height: 150px;
-     border: 1px solid lightgray;
-     outline: none;
-     font-size: 14px;
-   }
-   .btn-submit {
-     width: 100px;
-     height: 30px;
-     margin: 0 auto;
-     margin-top: 10px;
-     border-radius: 2px;
-     background-color: #FFEA03;
-     color: black;
-     font-size: 14px;
-     cursor: pointer;
-   }
-   .btn-submit:hover {
-      box-shadow: 0 0 10px rgba(0,0,0,.2);
-   }
- }
+  input {
+    width: 100%;
+    height: 20px;
+    border: 1px solid lightgray;
+    margin-bottom: 10px;
+    outline: none;
+    font-size: 14px;
+  }
+  textarea {
+    height: 150px;
+    border: 1px solid lightgray;
+    outline: none;
+    font-size: 14px;
+  }
+  .btn-submit {
+    width: 100px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 2px;
+    background-color: #ffea03;
+    color: black;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .btn-submit:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+}
 
 /*==========================================================
   PROJECTS
  =========================================================*/
 .content {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-   .project-description {
-     width: 70%;
+  .project-description {
+    width: 70%;
 
-     h1 {
-       font-size: 22px;
-       font-weight: 400;
-       margin-bottom: 0px;
-       margin-right: 10px;
-     }
-     div {
-       font-weight: 200;
-       margin-bottom: 10px;
-       line-height: 22px;
-       font-size: 14px;
-     }
+    h1 {
+      font-size: 22px;
+      font-weight: 400;
+      margin-bottom: 0px;
+      margin-right: 10px;
+    }
+    div {
+      font-weight: 200;
+      margin-bottom: 10px;
+      line-height: 22px;
+      font-size: 14px;
+    }
 
-     .tech {
-       line-height: 19px;
-       margin-bottom: 25px;
+    .tech {
+      line-height: 19px;
+      margin-bottom: 25px;
 
       h2 {
         font-weight: 350;
@@ -404,25 +401,24 @@ html,body {
         font-size: 13px;
         margin-bottom: 10px;
       }
-      
-     }
-   }
+    }
+  }
 
-   .video-wrap {
-      width: 70%;
-      border: 0.9px solid #ada8a8;
-      margin-bottom: 40px;
+  .video-wrap {
+    width: 70%;
+    border: 0.9px solid #ada8a8;
+    margin-bottom: 40px;
 
-      video {
-        width: 100%;
-      }
+    video {
+      width: 100%;
+    }
   }
 }
 
 /*==========================================================
   RESUME
  =========================================================*/
- .resume {
+.resume {
   margin-top: 110px;
   margin-bottom: 40px;
   display: flex;
@@ -436,12 +432,12 @@ html,body {
     font-size: 14px;
 
     .cell {
-      display: grid; 
+      display: grid;
       text-align: left;
-      grid-template-columns: repeat(2, 1fr); 
-      border-bottom: 3px solid #ECECEC;
-      border-left: 3px solid #ECECEC;
-      border-right: 3px solid #ECECEC;
+      grid-template-columns: repeat(2, 1fr);
+      border-bottom: 3px solid #ececec;
+      border-left: 3px solid #ececec;
+      border-right: 3px solid #ececec;
     }
   }
 
@@ -456,9 +452,8 @@ html,body {
       font-weight: 500;
       text-decoration: underline;
     }
-    
   }
-    .resume-download {
+  .resume-download {
     display: flex;
     justify-content: center;
 
@@ -502,6 +497,5 @@ html,body {
         line-height: 20px;
       }
     }
-
   }
 }
